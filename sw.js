@@ -1,8 +1,8 @@
-const CACHE_NAME = 'petits-explorateurs-v26';
+const CACHE_NAME = 'petits-explorateurs-v28';
 const APP_FILES = [
-  './', './index.html', './styles.css?v=14', './voice.js?v=11', './game-engine.js?v=12', './puzzle-game.js?v=7', './game.js?v=15', './manifest.webmanifest',
+  './', './index.html', './styles.css?v=16', './voice.js?v=11', './game-engine.js?v=12', './puzzle-game.js?v=11', './my-images.js?v=1', './game.js?v=16', './manifest.webmanifest',
   './assets/icon.svg', './assets/icon-192.png', './assets/icon-512.png', './assets/apple-touch-icon.png',
-  './voice-lines.json', './content/animals.json', './content/credits.json',
+  './voice-lines.json', './content/animals.json', './content/credits.json', './content/puzzles.json',
 ];
 
 // Photos and voice clips, listed from the same content files the game reads.
@@ -12,13 +12,15 @@ async function contentFiles() {
   for (const name of Object.keys(lines.names || {})) voice.push(...Object.keys(lines.named || {}).map((key) => `names/${name}/${key}`));
   const files = [];
   for (const theme of animals.themes) {
-    files.push(`./assets/themes/${theme.id}.webp`);
+    if (!theme.mix) files.push(`./assets/themes/${theme.id}.webp`);
     voice.push(`t/${theme.id}/intro`, `t/${theme.id}/outro`);
     for (const animal of theme.animals) {
       files.push(`./assets/animals/${animal.id}.webp`);
-      voice.push(...['prompt-1', 'prompt-2', 'yes-1', 'yes-2', 'name-1', 'name-2', 'hint-1', 'hint-2', 'fact', 'puzzle'].map((line) => `a/${animal.id}/${line}`));
+      voice.push(...['prompt-1', 'prompt-2', 'yes-1', 'yes-2', 'name-1', 'name-2', 'hint-1', 'hint-2', 'fact-1', 'fact-2', 'puzzle'].map((line) => `a/${animal.id}/${line}`));
     }
   }
+  const puzzles = await fetch('./content/puzzles.json', { cache: 'reload' }).then((response) => response.json()).catch(() => ({ collections: [] }));
+  for (const collection of puzzles.collections) files.push(...collection.images.map((picture) => `./assets/puzzles/${picture.id}.webp`));
   return [...files, ...voice.filter(Boolean).map((key) => `./assets/voice/${key}.m4a`)];
 }
 

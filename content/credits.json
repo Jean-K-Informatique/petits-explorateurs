@@ -622,5 +622,109 @@
   "author": "Matti Blume",
   "license": "CC BY-SA 4.0",
   "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+ },
+ {
+  "id": "tracteur",
+  "title": "File:John Deere 6120M Tractor - geograph.org.uk - 7614699.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:John_Deere_6120M_Tractor_-_geograph.org.uk_-_7614699.jpg",
+  "author": "Oscar Taylor",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+ },
+ {
+  "id": "pompiers",
+  "title": "File:FPTL 113 - Brigade de sapeurs-pompiers de Paris (1).jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:FPTL_113_-_Brigade_de_sapeurs-pompiers_de_Paris_(1).jpg",
+  "author": "Kevin.B",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "police",
+  "title": "File:Renault Mégane (2019) break, police nationale à Paris.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Renault_M%C3%A9gane_(2019)_break,_police_nationale_%C3%A0_Paris.jpg",
+  "author": "Kevin.B",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "ambulance",
+  "title": "File:DP-042-ML 070414 CPS (24328196502).jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:DP-042-ML_070414_CPS_(24328196502).jpg",
+  "author": "Chris Sampson",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+ },
+ {
+  "id": "bus",
+  "title": "File:Heuliez GX 137 n°147600 Congrès Promenade.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Heuliez_GX_137_n%C2%B0147600_Congr%C3%A8s_Promenade.jpg",
+  "author": "Florian Fèvre",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "train",
+  "title": "File:TGV Duplex Carmillon InOui 236 24-01-2023 (2).jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:TGV_Duplex_Carmillon_InOui_236_24-01-2023_(2).jpg",
+  "author": "Florianol45",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "avion",
+  "title": "File:Southwest Boeing 737-700 N947WN BWI MD1.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Southwest_Boeing_737-700_N947WN_BWI_MD1.jpg",
+  "author": "Acroterion",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "helicoptere",
+  "title": "File:Hélicoptère Airbus H145 - Sécurité civile F-ZBPI - Hauts-de-Seine (2).jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:H%C3%A9licopt%C3%A8re_Airbus_H145_-_S%C3%A9curit%C3%A9_civile_F-ZBPI_-_Hauts-de-Seine_(2).jpg",
+  "author": "Asticoco",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "bateau",
+  "title": "File:Sailing on Lake Constance, (1X7A9987).jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Sailing_on_Lake_Constance,_(1X7A9987).jpg",
+  "author": "Matti Blume",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "velo",
+  "title": "File:Bianchi.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Bianchi.jpg",
+  "author": "Petar Milošević",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "pelleteuse",
+  "title": "File:Pelleteuse Komatsu PC210 sur le chantier du Mas des Andrés (novembre 2019) - 0016.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Pelleteuse_Komatsu_PC210_sur_le_chantier_du_Mas_des_Andr%C3%A9s_(novembre_2019)_-_0016.jpg",
+  "author": "Benoît Prieur",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+ },
+ {
+  "id": "poubelle",
+  "title": "File:Camion poubelle Mercedes-Benz Actros, Suez-Sita, 2015.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Camion_poubelle_Mercedes-Benz_Actros,_Suez-Sita,_2015.jpg",
+  "author": "Kevin.B",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "background-vehicules",
+  "title": "File:Champniers 86 Route de campagne près Erveu 2014.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Champniers_86_Route_de_campagne_pr%C3%A8s_Erveu_2014.jpg",
+  "author": "JLPC",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
  }
 ]

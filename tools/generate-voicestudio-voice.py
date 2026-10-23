@@ -32,7 +32,8 @@ for theme in ANIMALS["themes"]:
                 TEXTS[f"{base}/{kind}-{index}"] = template.format(**animal)
         for index, hint in enumerate(animal["hints"], 1):
             TEXTS[f"{base}/hint-{index}"] = hint
-        TEXTS[f"{base}/fact"] = animal["fact"]
+        for index, fact in enumerate(animal["facts"], 1):
+            TEXTS[f"{base}/fact-{index}"] = fact
         TEXTS[f"{base}/puzzle"] = ANIMALS["lines"]["puzzle"].format(**animal)
 # Lila speaks slowly and calmly for young children (1.0 is the engine's natural pace).
 SPEED = 0.8
@@ -68,6 +69,7 @@ def encode(key):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--only", action="append", help="Generate just these voice keys")
+    parser.add_argument("--keys-file", type=Path, help="Generate the keys listed in this file, one per line")
     parser.add_argument("--name", action="append", help="Generate just the lines for these first-name slugs (see \"names\")")
     parser.add_argument("--prefix", action="append", help="Generate just the keys starting with this (e.g. a/lion/ or t/)")
     parser.add_argument("--missing", action="store_true", help="Skip lines whose clip already exists")
@@ -77,7 +79,9 @@ def main():
     parser.add_argument("--seed", type=int, default=7)
     parser.add_argument("--encode-only", action="store_true", help="Re-encode the existing masters without calling VoiceStudio")
     args = parser.parse_args()
-    keys = args.only or []
+    keys = list(args.only or [])
+    if args.keys_file:
+        keys += [line.strip() for line in args.keys_file.read_text(encoding="utf-8").splitlines() if line.strip()]
     for slug in args.name or []:
         keys += [key for key in TEXTS if key.startswith(f"names/{slug}/")] or [f"names/{slug}/"]
     for prefix in args.prefix or []:

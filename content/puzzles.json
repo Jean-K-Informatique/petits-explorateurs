@@ -1,0 +1,21 @@
+{
+  "collections": [
+    {
+      "id": "totoro",
+      "name": "Mon voisin Totoro",
+      "accent": "#5b8c5a",
+      "credit": "Images du film Mon voisin Totoro © 1988 Studio Ghibli, mises à disposition par le studio pour un usage libre « dans les limites du bon sens ».",
+      "source": "https://www.ghibli.jp/works/totoro/",
+      "images": [
+        { "id": "totoro044", "name": "Le Chatbus et Totoro" },
+        { "id": "totoro024", "name": "Mei sur le ventre de Totoro" },
+        { "id": "totoro019", "name": "Mei et les petits Totoro" },
+        { "id": "totoro034", "name": "Totoro et son parapluie" },
+        { "id": "totoro037", "name": "Dans l’arbre avec Totoro" },
+        { "id": "totoro031", "name": "Le Chatbus à l’arrêt de bus" },
+        { "id": "totoro049", "name": "Satsuki et Mei dans le Chatbus" },
+        { "id": "totoro001", "name": "La maison de Satsuki et Mei" }
+      ]
+    }
+  ]
+}

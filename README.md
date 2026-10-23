@@ -4,13 +4,15 @@ Jeu éducatif tactile en français, pour téléphone, tablette et ordinateur. La
 
 ## Les mondes et les jeux
 
-72 animaux photographiés, répartis dans six mondes de douze animaux : **la savane, la forêt, la ferme, l’océan, le pays des glaces et la jungle**. Sur l’accueil, l’enfant choisit un jeu, puis le monde à explorer ; chaque monde affiche combien d’animaux il a déjà découverts.
+72 animaux photographiés, répartis dans six mondes de douze animaux : **la savane, la forêt, la ferme, l’océan, le pays des glaces et la jungle**, plus **12 véhicules** (tracteur, camion de pompiers, voiture de police…) et **le grand mélange**, qui pioche dans tout. Sur l’accueil, l’enfant choisit un jeu, puis le monde à explorer ; chaque monde affiche combien de découvertes il reste à faire. Pas de score, pas d’étoiles, pas de chronomètre : on enchaîne tout seul d’un animal à l’autre, puis d’un monde au suivant.
 
-- **Les bulles** : Lila demande un animal (« Où est le zèbre ? »). Les bulles flottent dans tout l’espace libre, sans se chevaucher ; trois au départ, puis jusqu’à six quand l’enfant enchaîne les réussites.
-  - Bonne réponse : la bulle éclate et l’animal s’affiche en grand, avec son nom et une anecdote racontée par Lila. L’enfant passe à la suite quand il le souhaite.
+- **Les bulles** : Lila demande un animal (« Où est le zèbre ? »). Les bulles flottent dans tout l’espace libre, sans se chevaucher ; trois au départ, puis quatre au maximum quand l’enfant enchaîne les réussites (au-delà, c’est trop pour un enfant de 2 ans).
+  - Bonne réponse : la bulle éclate et l’animal s’affiche en grand, avec son nom et l’une de ses deux anecdotes, racontée par Lila ; le jeu passe ensuite tout seul à la suite.
   - Erreur : la bulle touchée montre son nom et Lila le dit (« Non, ça, c’est un hippopotame. »), puis donne un indice sur l’animal cherché (« Le crocodile est vert, avec une longue queue. »). Deuxième erreur : un autre indice. Troisième : la bonne bulle se met à briller.
   - Les couleurs et les chiffres restent disponibles depuis l’écran des mondes, avec le même principe (« Ça, c’est la bulle rouge. »).
-- **Le puzzle** : la photo de l’animal à reconstituer, modèle visible, quatre puis six pièces. L’animal terminé se dévoile avec son anecdote.
+- **Le puzzle** : 4, 6, 9 ou 12 pièces au choix (réglage gardé pour chaque enfant). Les pièces sont posées autour du plateau à leur vraie taille ; on peut les déposer n’importe où. Posée sur sa place, une pièce s’emboîte ; posée sur une mauvaise place, Lila prévient (« Attention, ce n’est pas à cet endroit-là ») et la pièce revient. Le bouton « Montre-moi » révèle la place d’une pièce. Outre les animaux et les véhicules, deux collections d’images :
+  - **Mon voisin Totoro** : 8 images du film, mises à disposition librement par le Studio Ghibli (« dans les limites du bon sens », voir <https://www.ghibli.jp/works/totoro/>), décrites dans `content/puzzles.json` et rangées dans `assets/puzzles/`.
+  - **Mes images** : photos ou dessins ajoutés par le parent depuis l’appareil (réglages ☼). Elles sont réduites et gardées dans la base locale du navigateur (`my-images.js`, IndexedDB) : jamais publiées ni envoyées ailleurs. C’est la façon d’avoir un puzzle de Bluey ou de la famille sans diffuser d’images protégées.
 - **Les paires** : retrouver les photos identiques ; une paire trouvée peut être touchée pour réentendre son anecdote. Le nombre de paires s’adapte aux réussites.
 
 Chaque partie propose d’abord les animaux que l’enfant n’a pas encore rencontrés. L’écran de fin montre les animaux découverts ; on peut les toucher pour les réécouter.
@@ -29,7 +31,9 @@ Pour publier une mise à jour : incrémenter `CACHE_NAME` dans `sw.js` (et le `?
 
 ## Contenu
 
-- `content/animals.json` : les mondes et leurs animaux. Pour chaque animal : nom affiché, formes avec article (`the` : « le zèbre », `a` : « un zèbre »), deux indices visuels et une anecdote. Les modèles de phrases communs (« Où est {the} ? »…) sont dans `lines`.
+- `content/animals.json` : les mondes (`group` : `animaux` ou `plus`), leurs animaux et les véhicules ; le monde `mix` pioche dans tous les autres. Pour chaque élément : nom affiché, formes avec article (`the` : « le zèbre », `a` : « un zèbre »), deux indices visuels (pour le trouver sur sa photo) et deux anecdotes vérifiées. Les modèles de phrases communs (« Où est {the} ? »…) sont dans `lines`.
+- `content/puzzles.json` : les collections d’images pour le puzzle.
+- `docs/recherche-jeux-2-ans.md` : synthèse de recherche sur les jeux adaptés à un enfant de 2 ans.
 - `assets/animals/<id>.webp` : photo carrée 768 px de chaque animal ; `assets/themes/<monde>.webp` : paysage de fond.
 - `content/credits.json` : auteur et licence de chaque photo (Wikimedia Commons, licences libres CC0, CC BY ou CC BY‑SA), affichés dans les réglages parents.
 - `tools/crop-photo.py` : recadre une photo téléchargée au bon format (`animal` ou `background`).
@@ -42,7 +46,7 @@ Pour ajouter un animal : ajouter sa fiche dans `content/animals.json`, sa photo 
 
 La voix de Lila est générée avec [VoiceStudio](https://github.com/debpalash/VoiceStudio) et son moteur par défaut OmniVoice (`k2-fsa/OmniVoice`), entièrement en local. Le timbre a été conçu une fois (« female, young adult, moderate pitch », graine 1) puis figé dans `tools/lila-reference.wav` avec sa transcription `tools/lila-reference.txt` : chaque réplique est clonée à partir de cette référence pour que Lila garde la même voix partout, avec un débit ralenti (`SPEED = 0.8` dans le générateur) pour rester calme et facile à suivre. VoiceStudio est sous licence AGPL‑3.0 ; le code OmniVoice est sous Apache‑2.0, mais ses poids pré-entraînés sont sous **CC‑BY‑NC** (usage non commercial, à cause de ses données d’entraînement). Ces voix conviennent donc à un usage personnel ; une commercialisation demanderait de les régénérer avec un moteur dont la licence le permet.
 
-Les répliques viennent de `voice-lines.json` (phrases générales, couleurs, chiffres, prénoms) et de `content/animals.json` (dix répliques par animal, intro et conclusion de chaque monde), soit environ 800 clips. Les originaux WAV sont gardés dans `voice-masters/` ; le jeu lit des versions AAC compressées dans `assets/voice/`.
+Les répliques viennent de `voice-lines.json` (phrases générales, couleurs, chiffres, prénoms) et de `content/animals.json` (onze répliques par animal ou véhicule, intro et conclusion de chaque monde), soit environ 1 000 clips. Les originaux WAV sont gardés dans `voice-masters/` ; le jeu lit des versions AAC compressées dans `assets/voice/`.
 
 Avec l’application VoiceStudio ouverte (son serveur écoute sur `http://127.0.0.1:3900`) :
 

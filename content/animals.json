@@ -1,8 +1,17 @@
 {
   "lines": {
-    "prompt": ["Où est {the} ?", "Montre-moi {the} !"],
-    "yes": ["Oui ! C’est bien {the}.", "Bravo, tu as trouvé {the} !"],
-    "name": ["Ça, c’est {the}.", "Non, ça, c’est {a}."],
+    "prompt": [
+      "Où est {the} ?",
+      "Montre-moi {the} !"
+    ],
+    "yes": [
+      "Oui ! C’est bien {the}.",
+      "Bravo, tu as trouvé {the} !"
+    ],
+    "name": [
+      "Ça, c’est {the}.",
+      "Non, ça, c’est {a}."
+    ],
     "puzzle": "Voici {the} ! Remets les pièces à leur place."
   },
   "themes": [
@@ -12,46 +21,179 @@
       "short": "Savane",
       "cover": "lion",
       "accent": "#d99a3d",
-      "intro": "En route pour la savane ! Il y fait chaud, et les animaux vivent dans les hautes herbes.",
-      "outro": "Quelle belle balade dans la savane ! À bientôt les animaux !",
+      "intro": "En route pour la savane, une immense plaine d’Afrique couverte d’herbes sèches, où il fait très chaud.",
+      "outro": "Bravo ! Tu connais maintenant les grands animaux de la savane.",
       "animals": [
-        { "id": "lion", "name": "Lion", "the": "le lion", "a": "un lion",
-          "hints": ["Le lion a une grosse crinière autour de la tête.", "Le lion est tout doré, comme l’herbe sèche."],
-          "fact": "Le lion rugit si fort qu’on l’entend de très loin dans la savane !" },
-        { "id": "elephant", "name": "Éléphant", "the": "l’éléphant", "a": "un éléphant",
-          "hints": ["L’éléphant a une longue trompe et de grandes oreilles.", "L’éléphant est tout gris et très, très grand."],
-          "fact": "L’éléphant se sert de sa trompe pour boire, sentir et attraper sa nourriture." },
-        { "id": "girafe", "name": "Girafe", "the": "la girafe", "a": "une girafe",
-          "hints": ["La girafe a un très long cou.", "La girafe a des taches marron sur un pelage clair."],
-          "fact": "La girafe est l’animal le plus haut du monde : elle mange les feuilles tout en haut des arbres !" },
-        { "id": "zebre", "name": "Zèbre", "the": "le zèbre", "a": "un zèbre",
-          "hints": ["Le zèbre a des rayures noires et blanches.", "Le zèbre ressemble à un petit cheval rayé."],
-          "fact": "Chaque zèbre a ses propres rayures : il n’y en a pas deux pareils !" },
-        { "id": "hippopotame", "name": "Hippopotame", "the": "l’hippopotame", "a": "un hippopotame",
-          "hints": ["L’hippopotame est gros et rond, avec une énorme bouche.", "L’hippopotame aime rester dans l’eau."],
-          "fact": "L’hippopotame passe ses journées dans l’eau pour rester au frais." },
-        { "id": "rhinoceros", "name": "Rhinocéros", "the": "le rhinocéros", "a": "un rhinocéros",
-          "hints": ["Le rhinocéros a une grande corne sur le nez.", "Le rhinocéros est gris, avec une peau très épaisse."],
-          "fact": "La corne du rhinocéros est faite de la même matière que nos ongles !" },
-        { "id": "guepard", "name": "Guépard", "the": "le guépard", "a": "un guépard",
-          "hints": ["Le guépard a un pelage jaune avec plein de petits points noirs.", "Le guépard a deux traits noirs sous les yeux, comme des larmes."],
-          "fact": "Le guépard est l’animal le plus rapide sur la terre : il court plus vite qu’une voiture en ville !" },
-        { "id": "crocodile", "name": "Crocodile", "the": "le crocodile", "a": "un crocodile",
-          "hints": ["Le crocodile est vert, avec une longue queue.", "Le crocodile a une grande bouche pleine de dents pointues."],
-          "fact": "Le crocodile se cache sous l’eau, avec juste les yeux et le nez qui dépassent." },
-        { "id": "autruche", "name": "Autruche", "the": "l’autruche", "a": "une autruche",
-          "hints": ["L’autruche est un très grand oiseau, avec un long cou.", "L’autruche a de grandes pattes et des plumes noires ou grises."],
-          "fact": "L’autruche ne sait pas voler, mais elle court très vite avec ses grandes pattes." },
-        { "id": "suricate", "name": "Suricate", "the": "le suricate", "a": "un suricate",
-          "hints": ["Le suricate est tout petit et se tient debout sur ses pattes arrière.", "Le suricate a des taches sombres autour des yeux."],
-          "fact": "Les suricates montent la garde chacun leur tour pour surveiller leur famille." },
-        { "id": "phacochere", "name": "Phacochère", "the": "le phacochère", "a": "un phacochère",
-          "hints": ["Le phacochère ressemble à un cochon avec deux grandes défenses.", "Le phacochère a une crinière de poils sur le dos."],
-          "fact": "Quand il court, le phacochère lève sa queue toute droite, comme une petite antenne !" },
-        { "id": "babouin", "name": "Babouin", "the": "le babouin", "a": "un babouin",
-          "hints": ["Le babouin est un singe avec un long museau, comme un chien.", "Le babouin a un pelage gris ou marron."],
-          "fact": "Les bébés babouins voyagent sur le dos de leur maman." }
-      ]
+        {
+          "id": "lion",
+          "name": "Lion",
+          "the": "le lion",
+          "a": "un lion",
+          "hints": [
+            "Le lion mâle porte une grande crinière autour de la tête.",
+            "Le lion a un pelage fauve, de la couleur de l’herbe sèche."
+          ],
+          "facts": [
+            "Le lion est le seul grand félin qui vit en groupe : une famille de lions s’appelle une troupe.",
+            "Le rugissement du lion s’entend jusqu’à huit kilomètres : il prévient les autres que ce territoire est le sien."
+          ]
+        },
+        {
+          "id": "elephant",
+          "name": "Éléphant",
+          "the": "l’éléphant",
+          "a": "un éléphant",
+          "hints": [
+            "L’éléphant a une longue trompe et de très grandes oreilles.",
+            "L’éléphant porte deux défenses blanches, de chaque côté de sa trompe."
+          ],
+          "facts": [
+            "L’éléphant d’Afrique est le plus grand animal terrestre : il pèse autant que cinq voitures.",
+            "La trompe de l’éléphant, c’est son nez et sa lèvre réunis : il s’en sert pour boire, sentir et attraper sa nourriture."
+          ]
+        },
+        {
+          "id": "girafe",
+          "name": "Girafe",
+          "the": "la girafe",
+          "a": "une girafe",
+          "hints": [
+            "La girafe a un très long cou et de longues pattes.",
+            "La girafe a de grandes taches brunes sur un pelage clair, et deux petites cornes sur la tête."
+          ],
+          "facts": [
+            "La girafe est l’animal le plus haut du monde : elle peut dépasser cinq mètres, la hauteur d’une maison à deux étages.",
+            "La langue de la girafe est violette et très longue : elle l’enroule autour des branches pour attraper les feuilles entre les épines."
+          ]
+        },
+        {
+          "id": "zebre",
+          "name": "Zèbre",
+          "the": "le zèbre",
+          "a": "un zèbre",
+          "hints": [
+            "Le zèbre a des rayures noires et blanches sur tout le corps.",
+            "Le zèbre ressemble à un cheval, avec une petite crinière toute droite."
+          ],
+          "facts": [
+            "Chaque zèbre a des rayures uniques : comme nos empreintes de doigts, il n’y en a pas deux pareilles.",
+            "Les scientifiques ont découvert que les rayures du zèbre gênent les mouches qui piquent : elles ont du mal à se poser dessus."
+          ]
+        },
+        {
+          "id": "hippopotame",
+          "name": "Hippopotame",
+          "the": "l’hippopotame",
+          "a": "un hippopotame",
+          "hints": [
+            "L’hippopotame est énorme et tout rond, avec une bouche immense.",
+            "L’hippopotame a les yeux et les narines tout en haut de la tête, pour respirer en restant dans l’eau."
+          ],
+          "facts": [
+            "L’hippopotame passe la journée dans l’eau pour protéger sa peau du soleil, et sort la nuit pour manger de l’herbe.",
+            "Le mot hippopotame veut dire « cheval de rivière », mais son plus proche cousin est en réalité la baleine."
+          ]
+        },
+        {
+          "id": "rhinoceros",
+          "name": "Rhinocéros",
+          "the": "le rhinocéros",
+          "a": "un rhinocéros",
+          "hints": [
+            "Le rhinocéros a une ou deux cornes sur le nez.",
+            "Le rhinocéros est gris, avec une peau très épaisse, comme une armure."
+          ],
+          "facts": [
+            "La corne du rhinocéros est faite de kératine, la même matière que nos cheveux et nos ongles.",
+            "Le rhinocéros voit mal, mais il a un très bon odorat et une excellente ouïe."
+          ]
+        },
+        {
+          "id": "guepard",
+          "name": "Guépard",
+          "the": "le guépard",
+          "a": "un guépard",
+          "hints": [
+            "Le guépard a un pelage doré couvert de petites taches noires toutes rondes.",
+            "Le guépard a deux traits noirs qui descendent de ses yeux, comme des larmes."
+          ],
+          "facts": [
+            "Le guépard est l’animal le plus rapide sur la terre : il dépasse cent kilomètres à l’heure, mais seulement sur une courte distance.",
+            "Pour courir aussi vite, le guépard a un corps fin et léger, et une longue queue qui l’aide à tourner sans tomber."
+          ]
+        },
+        {
+          "id": "crocodile",
+          "name": "Crocodile",
+          "the": "le crocodile",
+          "a": "un crocodile",
+          "hints": [
+            "Le crocodile a une longue queue et un dos couvert d’écailles dures.",
+            "Le crocodile a une grande gueule pleine de dents pointues."
+          ],
+          "facts": [
+            "Le crocodile est un reptile : ses ancêtres vivaient déjà à l’époque des dinosaures.",
+            "La maman crocodile transporte ses bébés dans sa gueule, très doucement, pour les amener jusqu’à l’eau."
+          ]
+        },
+        {
+          "id": "autruche",
+          "name": "Autruche",
+          "the": "l’autruche",
+          "a": "une autruche",
+          "hints": [
+            "L’autruche est un très grand oiseau, avec un long cou et de longues pattes.",
+            "L’autruche mâle a des plumes noires et le bout des ailes blanc."
+          ],
+          "facts": [
+            "L’autruche est le plus grand oiseau du monde : elle ne vole pas, mais elle court aussi vite qu’un cheval au galop.",
+            "L’œuf d’autruche est le plus gros œuf d’oiseau : il pèse autant qu’une vingtaine d’œufs de poule."
+          ]
+        },
+        {
+          "id": "suricate",
+          "name": "Suricate",
+          "the": "le suricate",
+          "a": "un suricate",
+          "hints": [
+            "Le suricate est un petit animal qui se tient souvent debout sur ses pattes arrière.",
+            "Le suricate a un pelage beige et des taches sombres autour des yeux."
+          ],
+          "facts": [
+            "Les suricates vivent en groupe : pendant que les autres cherchent à manger, l’un d’eux monte la garde et crie en cas de danger.",
+            "Les suricates creusent des terriers sous le sable avec leurs longues griffes, pour s’abriter de la chaleur."
+          ]
+        },
+        {
+          "id": "phacochere",
+          "name": "Phacochère",
+          "the": "le phacochère",
+          "a": "un phacochère",
+          "hints": [
+            "Le phacochère ressemble à un cochon sauvage, avec deux grandes défenses recourbées.",
+            "Le phacochère a une crinière de poils sur le dos et des bosses sur le visage."
+          ],
+          "facts": [
+            "Pour brouter l’herbe courte, le phacochère s’agenouille sur ses pattes avant.",
+            "Quand il court, le phacochère tient sa queue dressée toute droite, comme une antenne."
+          ]
+        },
+        {
+          "id": "babouin",
+          "name": "Babouin",
+          "the": "le babouin",
+          "a": "un babouin",
+          "hints": [
+            "Le babouin est un singe au long museau, un peu comme celui d’un chien.",
+            "Le babouin a un pelage gris-brun et marche à quatre pattes."
+          ],
+          "facts": [
+            "Les babouins vivent en grandes troupes, parfois de plus de cinquante singes.",
+            "Les babouins passent beaucoup de temps à se nettoyer les poils les uns les autres : c’est leur façon de prendre soin de leurs amis."
+          ]
+        }
+      ],
+      "group": "animaux"
     },
     {
       "id": "foret",
@@ -59,46 +201,179 @@
       "short": "Forêt",
       "cover": "renard",
       "accent": "#5f8f4e",
-      "intro": "Bienvenue dans la forêt ! Ouvre bien les yeux, les animaux se cachent entre les arbres.",
-      "outro": "Quelle jolie promenade dans la forêt ! Les animaux te disent au revoir.",
+      "intro": "Bienvenue dans la forêt. Ouvre bien les yeux : beaucoup d’animaux se cachent entre les arbres.",
+      "outro": "Bravo ! Tu connais maintenant les animaux de nos forêts.",
       "animals": [
-        { "id": "renard", "name": "Renard", "the": "le renard", "a": "un renard",
-          "hints": ["Le renard est roux, avec une grande queue touffue.", "Le renard a un museau pointu et de grandes oreilles."],
-          "fact": "Le renard entend le plus petit bruit, même une souris cachée sous la neige !" },
-        { "id": "ours", "name": "Ours brun", "the": "l’ours brun", "a": "un ours brun",
-          "hints": ["L’ours brun est grand et marron, avec une fourrure épaisse.", "L’ours brun a de petites oreilles rondes et de grosses pattes."],
-          "fact": "En hiver, l’ours dort très longtemps, bien au chaud dans sa tanière." },
-        { "id": "cerf", "name": "Cerf", "the": "le cerf", "a": "un cerf",
-          "hints": ["Le cerf a de grands bois sur la tête, comme des branches.", "Le cerf a un pelage marron et de longues pattes fines."],
-          "fact": "Chaque année, les bois du cerf tombent, puis ils repoussent." },
-        { "id": "ecureuil", "name": "Écureuil", "the": "l’écureuil", "a": "un écureuil",
-          "hints": ["L’écureuil est petit et roux, avec une queue en panache.", "L’écureuil a de petites touffes de poils au bout des oreilles."],
-          "fact": "L’écureuil cache des noisettes un peu partout pour avoir à manger en hiver." },
-        { "id": "herisson", "name": "Hérisson", "the": "le hérisson", "a": "un hérisson",
-          "hints": ["Le hérisson est couvert de piquants.", "Le hérisson a un petit museau pointu et un nez noir."],
-          "fact": "Quand il a peur, le hérisson se roule en boule, et ses piquants le protègent." },
-        { "id": "hibou", "name": "Hibou", "the": "le hibou", "a": "un hibou",
-          "hints": ["Le hibou a de grands yeux ronds et des plumes qui ressemblent à des oreilles.", "Le hibou est un oiseau aux plumes brunes."],
-          "fact": "Le hibou se réveille la nuit, et il voit très bien dans le noir." },
-        { "id": "loup", "name": "Loup", "the": "le loup", "a": "un loup",
-          "hints": ["Le loup ressemble à un grand chien gris.", "Le loup a des yeux jaunes et des oreilles pointues."],
-          "fact": "Les loups vivent en famille, qu’on appelle une meute, et ils hurlent pour se parler." },
-        { "id": "sanglier", "name": "Sanglier", "the": "le sanglier", "a": "un sanglier",
-          "hints": ["Le sanglier ressemble à un cochon couvert de poils sombres.", "Le sanglier a un long groin et de petites défenses."],
-          "fact": "Les bébés sangliers s’appellent des marcassins, et ils ont des rayures sur le dos." },
-        { "id": "blaireau", "name": "Blaireau", "the": "le blaireau", "a": "un blaireau",
-          "hints": ["Le blaireau a une tête blanche avec deux bandes noires.", "Le blaireau est gris, avec de toutes petites pattes."],
-          "fact": "Le blaireau creuse de longs tunnels pour se faire une maison sous la terre." },
-        { "id": "castor", "name": "Castor", "the": "le castor", "a": "un castor",
-          "hints": ["Le castor a une grande queue toute plate.", "Le castor a un gros corps marron et de toutes petites oreilles."],
-          "fact": "Le castor coupe des arbres avec ses dents pour construire des barrages sur la rivière." },
-        { "id": "lynx", "name": "Lynx", "the": "le lynx", "a": "un lynx",
-          "hints": ["Le lynx est un grand chat, avec des pinceaux de poils noirs au bout des oreilles.", "Le lynx a une toute petite queue et des taches sur le pelage."],
-          "fact": "Le lynx a de grandes pattes poilues qui l’aident à marcher sur la neige." },
-        { "id": "pic-vert", "name": "Pic-vert", "the": "le pic-vert", "a": "un pic-vert",
-          "hints": ["Le pic-vert est un oiseau vert, avec une tache rouge sur la tête.", "Le pic-vert a un long bec pointu."],
-          "fact": "Le pic-vert adore manger des fourmis, qu’il attrape avec sa très longue langue." }
-      ]
+        {
+          "id": "renard",
+          "name": "Renard",
+          "the": "le renard",
+          "a": "un renard",
+          "hints": [
+            "Le renard roux a un pelage orangé et une grande queue touffue.",
+            "Le renard a un museau pointu et de grandes oreilles dressées."
+          ],
+          "facts": [
+            "Le renard entend une souris gratter sous la neige : il saute alors en l’air pour plonger dessus.",
+            "Les petits du renard s’appellent des renardeaux ; ils naissent au printemps, dans un terrier."
+          ]
+        },
+        {
+          "id": "ours",
+          "name": "Ours brun",
+          "the": "l’ours brun",
+          "a": "un ours brun",
+          "hints": [
+            "L’ours brun est grand et massif, avec une épaisse fourrure marron.",
+            "L’ours brun a une bosse sur les épaules et de petites oreilles rondes."
+          ],
+          "facts": [
+            "En hiver, l’ours brun dort dans sa tanière : il peut rester plusieurs mois sans manger.",
+            "L’ours brun mange de tout : des baies, des racines, du miel, des insectes et du poisson."
+          ]
+        },
+        {
+          "id": "cerf",
+          "name": "Cerf",
+          "the": "le cerf",
+          "a": "un cerf",
+          "hints": [
+            "Le cerf porte de grands bois sur la tête, comme des branches d’arbre.",
+            "Le cerf a un pelage brun et de longues pattes fines."
+          ],
+          "facts": [
+            "Chaque fin d’hiver, les bois du cerf tombent, puis ils repoussent pendant l’été.",
+            "À l’automne, le cerf pousse un cri très puissant qu’on appelle le brame."
+          ]
+        },
+        {
+          "id": "ecureuil",
+          "name": "Écureuil",
+          "the": "l’écureuil",
+          "a": "un écureuil",
+          "hints": [
+            "L’écureuil roux est petit, avec une grande queue en panache.",
+            "L’écureuil roux a des touffes de poils au bout des oreilles."
+          ],
+          "facts": [
+            "En automne, l’écureuil cache des noisettes un peu partout ; celles qu’il oublie peuvent devenir de nouveaux arbres.",
+            "L’écureuil se sert de sa grande queue pour garder l’équilibre quand il saute de branche en branche."
+          ]
+        },
+        {
+          "id": "herisson",
+          "name": "Hérisson",
+          "the": "le hérisson",
+          "a": "un hérisson",
+          "hints": [
+            "Le hérisson a le dos couvert de piquants.",
+            "Le hérisson a un petit museau pointu et un nez noir."
+          ],
+          "facts": [
+            "Le hérisson porte environ six mille piquants ; quand il a peur, il se roule en boule pour se protéger.",
+            "Le hérisson sort la nuit pour manger des limaces et des insectes : c’est un ami des jardiniers."
+          ]
+        },
+        {
+          "id": "hibou",
+          "name": "Hibou",
+          "the": "le hibou",
+          "a": "un hibou",
+          "hints": [
+            "Le hibou grand-duc a de grands yeux orange et deux touffes de plumes sur la tête.",
+            "Le hibou a des plumes brunes tachetées, qui le cachent contre l’écorce des arbres."
+          ],
+          "facts": [
+            "Le hibou ne peut pas bouger ses yeux : pour regarder sur le côté, il tourne la tête presque jusque derrière lui.",
+            "Les plumes du hibou sont si douces qu’il vole sans faire de bruit pour surprendre ses proies la nuit."
+          ]
+        },
+        {
+          "id": "loup",
+          "name": "Loup",
+          "the": "le loup",
+          "a": "un loup",
+          "hints": [
+            "Le loup ressemble à un grand chien au pelage gris.",
+            "Le loup a des yeux jaunes et des oreilles pointues."
+          ],
+          "facts": [
+            "Les loups vivent en famille, qu’on appelle une meute, et ils chassent ensemble.",
+            "Le loup hurle pour retrouver les autres loups de sa meute, même quand ils sont très loin."
+          ]
+        },
+        {
+          "id": "sanglier",
+          "name": "Sanglier",
+          "the": "le sanglier",
+          "a": "un sanglier",
+          "hints": [
+            "Le sanglier a un pelage sombre et raide, avec un long groin.",
+            "Le sanglier mâle a des défenses qui sortent de sa bouche."
+          ],
+          "facts": [
+            "Les petits du sanglier s’appellent des marcassins : ils ont des rayures claires sur le dos pour se cacher dans les feuilles.",
+            "Le sanglier fouille la terre avec son groin pour trouver des racines, des glands et des vers."
+          ]
+        },
+        {
+          "id": "blaireau",
+          "name": "Blaireau",
+          "the": "le blaireau",
+          "a": "un blaireau",
+          "hints": [
+            "Le blaireau a une tête blanche avec deux bandes noires.",
+            "Le blaireau a un corps gris et trapu, avec de courtes pattes."
+          ],
+          "facts": [
+            "Le blaireau creuse des terriers immenses, avec de longs tunnels et plusieurs entrées.",
+            "Le blaireau change souvent les feuilles et l’herbe sèche de son lit : c’est un animal très propre."
+          ]
+        },
+        {
+          "id": "castor",
+          "name": "Castor",
+          "the": "le castor",
+          "a": "un castor",
+          "hints": [
+            "Le castor a une grande queue plate et couverte d’écailles.",
+            "Le castor a un gros corps marron et de toutes petites oreilles."
+          ],
+          "facts": [
+            "Le castor ronge des troncs d’arbres avec ses dents pour construire des barrages sur la rivière.",
+            "Les dents du castor sont orange, car elles contiennent du fer, qui les rend très solides."
+          ]
+        },
+        {
+          "id": "lynx",
+          "name": "Lynx",
+          "the": "le lynx",
+          "a": "un lynx",
+          "hints": [
+            "Le lynx est un grand chat sauvage, avec des pinceaux de poils noirs au bout des oreilles.",
+            "Le lynx a un pelage tacheté et une queue très courte."
+          ],
+          "facts": [
+            "Le lynx a une vue perçante : il repère ses proies de très loin.",
+            "Le lynx a de grandes pattes poilues qui l’empêchent de s’enfoncer dans la neige, comme des raquettes."
+          ]
+        },
+        {
+          "id": "pic-vert",
+          "name": "Pivert",
+          "the": "le pivert",
+          "a": "un pivert",
+          "hints": [
+            "Le pivert a des plumes vertes et une calotte rouge sur la tête.",
+            "Le pivert a un long bec pointu, et il s’accroche aux troncs des arbres."
+          ],
+          "facts": [
+            "Le pivert adore les fourmis : il les attrape avec sa langue très longue et collante.",
+            "Le pivert creuse son nid dans le tronc des arbres, à coups de bec."
+          ]
+        }
+      ],
+      "group": "animaux"
     },
     {
       "id": "ferme",
@@ -106,46 +381,179 @@
       "short": "Ferme",
       "cover": "vache",
       "accent": "#c7764a",
-      "intro": "Bienvenue à la ferme ! Viens dire bonjour aux animaux.",
-      "outro": "Merci pour ta visite à la ferme ! Les animaux sont contents de t’avoir vu.",
+      "intro": "Bienvenue à la ferme, où les animaux vivent avec les éleveurs.",
+      "outro": "Bravo ! Tu connais maintenant les animaux de la ferme.",
       "animals": [
-        { "id": "vache", "name": "Vache", "the": "la vache", "a": "une vache",
-          "hints": ["La vache est souvent blanche, avec des taches noires.", "La vache a un gros museau rose et une longue queue."],
-          "fact": "La vache donne du lait, qui sert à faire le fromage et les yaourts." },
-        { "id": "cochon", "name": "Cochon", "the": "le cochon", "a": "un cochon",
-          "hints": ["Le cochon est rose, avec un groin tout rond.", "Le cochon a de grandes oreilles toutes roses."],
-          "fact": "Le cochon se roule dans la boue pour se rafraîchir et protéger sa peau du soleil." },
-        { "id": "mouton", "name": "Mouton", "the": "le mouton", "a": "un mouton",
-          "hints": ["Le mouton est couvert de laine blanche toute frisée.", "Le mouton a une tête blanche et un nez noir."],
-          "fact": "Avec la laine du mouton, on fabrique des pulls bien chauds." },
-        { "id": "chevre", "name": "Chèvre", "the": "la chèvre", "a": "une chèvre",
-          "hints": ["La chèvre a une petite barbe sous le menton.", "La chèvre a deux cornes sur la tête."],
-          "fact": "La chèvre adore grimper partout, même sur les rochers." },
-        { "id": "cheval", "name": "Cheval", "the": "le cheval", "a": "un cheval",
-          "hints": ["Le cheval a une longue crinière et une longue queue.", "Le cheval a de grandes jambes et des sabots."],
-          "fact": "Le cheval peut dormir debout !" },
-        { "id": "ane", "name": "Âne", "the": "l’âne", "a": "un âne",
-          "hints": ["L’âne a de très grandes oreilles.", "L’âne ressemble à un petit cheval, avec le bout du museau tout clair."],
-          "fact": "Quand il appelle ses amis, l’âne fait hi-han !" },
-        { "id": "poule", "name": "Poule", "the": "la poule", "a": "une poule",
-          "hints": ["La poule a des plumes et une crête rouge sur la tête.", "La poule a un petit bec pointu et deux pattes."],
-          "fact": "La poule pond des œufs, presque un chaque jour !" },
-        { "id": "canard", "name": "Canard", "the": "le canard", "a": "un canard",
-          "hints": ["Le canard a un bec tout plat.", "Le canard aime nager dans la mare."],
-          "fact": "Les plumes du canard ne se mouillent pas : l’eau glisse dessus !" },
-        { "id": "lapin", "name": "Lapin", "the": "le lapin", "a": "un lapin",
-          "hints": ["Le lapin a de très longues oreilles.", "Le lapin a une petite queue toute ronde, comme une boule de coton."],
-          "fact": "Les dents du lapin poussent toute sa vie, alors il grignote tout le temps." },
-        { "id": "dindon", "name": "Dindon", "the": "le dindon", "a": "un dindon",
-          "hints": ["Le dindon a une peau rouge qui pend sous son bec.", "Le dindon fait la roue avec les plumes de sa queue."],
-          "fact": "Le dindon fait glou-glou pour parler aux autres dindons." },
-        { "id": "chien", "name": "Chien", "the": "le chien", "a": "un chien",
-          "hints": ["Le chien remue la queue quand il est content.", "Le chien a une truffe noire et de grandes oreilles."],
-          "fact": "Le chien a un nez extraordinaire : il sent des odeurs que nous ne sentons pas du tout." },
-        { "id": "chat", "name": "Chat", "the": "le chat", "a": "un chat",
-          "hints": ["Le chat a de longues moustaches et des oreilles pointues.", "Le chat a un pelage tigré, avec des rayures grises."],
-          "fact": "Le chat ronronne quand il est content et qu’on le caresse." }
-      ]
+        {
+          "id": "vache",
+          "name": "Vache",
+          "the": "la vache",
+          "a": "une vache",
+          "hints": [
+            "Cette vache est blanche, avec de grandes taches noires.",
+            "La vache a un gros museau rose et une longue queue."
+          ],
+          "facts": [
+            "La vache avale l’herbe, puis la fait revenir dans sa bouche pour la mâcher encore : on dit qu’elle rumine.",
+            "Le lait de la vache sert à faire le beurre, la crème, les yaourts et des centaines de fromages."
+          ]
+        },
+        {
+          "id": "cochon",
+          "name": "Cochon",
+          "the": "le cochon",
+          "a": "un cochon",
+          "hints": [
+            "Le cochon a la peau rose et un groin tout rond.",
+            "Le cochon a de grandes oreilles et une petite queue."
+          ],
+          "facts": [
+            "Le cochon a un odorat excellent : avec son groin, il peut trouver des truffes cachées sous la terre.",
+            "Le cochon ne transpire presque pas : il se roule dans la boue pour se rafraîchir et protéger sa peau du soleil."
+          ]
+        },
+        {
+          "id": "mouton",
+          "name": "Mouton",
+          "the": "le mouton",
+          "a": "un mouton",
+          "hints": [
+            "Le mouton est couvert d’une épaisse laine frisée.",
+            "Ce mouton a une tête blanche et un nez noir."
+          ],
+          "facts": [
+            "Une fois par an, au printemps, on tond la laine du mouton pour fabriquer des vêtements chauds.",
+            "Les moutons ont une très bonne mémoire : ils reconnaissent les visages de leurs compagnons pendant des années."
+          ]
+        },
+        {
+          "id": "chevre",
+          "name": "Chèvre",
+          "the": "la chèvre",
+          "a": "une chèvre",
+          "hints": [
+            "La chèvre a une petite barbe sous le menton.",
+            "La chèvre a deux cornes et un pelage qui peut être long."
+          ],
+          "facts": [
+            "La chèvre est une excellente grimpeuse : elle peut escalader des rochers très raides, et même monter dans les arbres.",
+            "Les yeux de la chèvre ont une pupille en forme de rectangle : elle voit presque tout autour d’elle sans tourner la tête."
+          ]
+        },
+        {
+          "id": "cheval",
+          "name": "Cheval",
+          "the": "le cheval",
+          "a": "un cheval",
+          "hints": [
+            "Le cheval a une longue crinière et une longue queue.",
+            "Le cheval a de longues jambes terminées par des sabots."
+          ],
+          "facts": [
+            "Le cheval peut dormir debout : ses jambes se bloquent pour qu’il ne tombe pas.",
+            "Les yeux du cheval sont sur les côtés de sa tête : il voit presque tout autour de lui."
+          ]
+        },
+        {
+          "id": "ane",
+          "name": "Âne",
+          "the": "l’âne",
+          "a": "un âne",
+          "hints": [
+            "L’âne a de très grandes oreilles.",
+            "L’âne ressemble à un petit cheval, avec le bout du museau tout clair."
+          ],
+          "facts": [
+            "L’âne est très résistant : depuis des milliers d’années, il aide les hommes à porter de lourdes charges.",
+            "Les grandes oreilles de l’âne l’aident à entendre de loin et à se rafraîchir quand il fait chaud."
+          ]
+        },
+        {
+          "id": "poule",
+          "name": "Poule",
+          "the": "la poule",
+          "a": "une poule",
+          "hints": [
+            "La poule a une crête rouge sur la tête.",
+            "La poule a des plumes, un petit bec pointu et deux pattes."
+          ],
+          "facts": [
+            "La poule descend d’un oiseau sauvage d’Asie, et elle vit avec les humains depuis des milliers d’années.",
+            "Une poule peut pondre presque un œuf par jour, même sans coq : ces œufs-là ne donnent pas de poussins."
+          ]
+        },
+        {
+          "id": "canard",
+          "name": "Canard",
+          "the": "le canard",
+          "a": "un canard",
+          "hints": [
+            "Le canard a un bec large et plat.",
+            "Le canard colvert mâle a la tête verte et brillante."
+          ],
+          "facts": [
+            "Le canard étale sur ses plumes une huile qu’il fabrique près de sa queue : l’eau glisse dessus et il reste au sec.",
+            "Le canard a des pattes palmées, comme des palmes de plongée : elles l’aident à nager."
+          ]
+        },
+        {
+          "id": "lapin",
+          "name": "Lapin",
+          "the": "le lapin",
+          "a": "un lapin",
+          "hints": [
+            "Le lapin a de très longues oreilles.",
+            "Le lapin a une petite queue toute ronde, comme un pompon."
+          ],
+          "facts": [
+            "Les dents du lapin poussent toute sa vie : il doit ronger sans arrêt pour les user.",
+            "Le lapin peut tourner ses longues oreilles pour écouter de tous les côtés."
+          ]
+        },
+        {
+          "id": "dindon",
+          "name": "Dindon",
+          "the": "le dindon",
+          "a": "un dindon",
+          "hints": [
+            "Le dindon a une peau rouge qui pend sous son bec.",
+            "Le dindon fait la roue en déployant les plumes de sa queue."
+          ],
+          "facts": [
+            "Pour impressionner les autres, le dindon gonfle ses plumes et fait la roue, comme un éventail.",
+            "La peau de la tête du dindon change de couleur selon son humeur : rouge, bleue ou blanche."
+          ]
+        },
+        {
+          "id": "chien",
+          "name": "Chien",
+          "the": "le chien",
+          "a": "un chien",
+          "hints": [
+            "Ce chien de berger a un pelage noir et blanc.",
+            "Le chien a une truffe noire et des oreilles qui se dressent quand il écoute."
+          ],
+          "facts": [
+            "Le chien de berger aide l’éleveur à rassembler et à guider les moutons.",
+            "Le chien a un odorat des milliers de fois plus fin que le nôtre."
+          ]
+        },
+        {
+          "id": "chat",
+          "name": "Chat",
+          "the": "le chat",
+          "a": "un chat",
+          "hints": [
+            "Le chat a de longues moustaches et des oreilles pointues.",
+            "Ce chat a un pelage tigré, avec des rayures grises."
+          ],
+          "facts": [
+            "Les moustaches du chat lui servent à sentir les objets autour de lui, même dans le noir.",
+            "Le chat voit très bien quand il fait sombre : ses yeux brillent la nuit, car ils renvoient la lumière."
+          ]
+        }
+      ],
+      "group": "animaux"
     },
     {
       "id": "ocean",
@@ -153,46 +561,179 @@
       "short": "Océan",
       "cover": "dauphin",
       "accent": "#3b8fb8",
-      "intro": "Plongeons dans l’océan ! Plein d’animaux nagent sous l’eau.",
-      "outro": "Quelle belle plongée ! On remonte à la surface.",
+      "intro": "Plongeons dans l’océan, qui recouvre la plus grande partie de notre planète.",
+      "outro": "Bravo ! Tu connais maintenant des animaux de l’océan.",
       "animals": [
-        { "id": "baleine", "name": "Baleine", "the": "la baleine", "a": "une baleine",
-          "hints": ["La baleine est immense, plus grande qu’un bus.", "La baleine a de très longues nageoires, comme de grandes ailes."],
-          "fact": "La baleine respire de l’air : elle remonte à la surface et souffle un grand jet d’eau." },
-        { "id": "dauphin", "name": "Dauphin", "the": "le dauphin", "a": "un dauphin",
-          "hints": ["Le dauphin est gris, avec un museau comme un sourire.", "Le dauphin a un aileron sur le dos."],
-          "fact": "Les dauphins se parlent avec des sifflements et des petits clics." },
-        { "id": "orque", "name": "Orque", "the": "l’orque", "a": "une orque",
-          "hints": ["L’orque est noire et blanche.", "L’orque a un très grand aileron sur le dos."],
-          "fact": "Les orques vivent en famille, et elles chassent toutes ensemble." },
-        { "id": "requin", "name": "Requin", "the": "le requin", "a": "un requin",
-          "hints": ["Le requin a un aileron pointu sur le dos.", "Le requin a un museau pointu et un corps tout fin."],
-          "fact": "Le requin perd souvent des dents, mais de nouvelles repoussent tout le temps." },
-        { "id": "tortue-mer", "name": "Tortue de mer", "the": "la tortue de mer", "a": "une tortue de mer",
-          "hints": ["La tortue de mer a une carapace sur le dos.", "La tortue de mer nage avec de grandes nageoires."],
-          "fact": "La tortue de mer pond ses œufs dans le sable, sur la plage." },
-        { "id": "pieuvre", "name": "Pieuvre", "the": "la pieuvre", "a": "une pieuvre",
-          "hints": ["La pieuvre a huit longs bras.", "La pieuvre a des ventouses sous ses bras."],
-          "fact": "La pieuvre peut changer de couleur pour se cacher." },
-        { "id": "poisson-clown", "name": "Poisson-clown", "the": "le poisson-clown", "a": "un poisson-clown",
-          "hints": ["Le poisson-clown est orange, avec des bandes blanches.", "Le poisson-clown est un petit poisson qui se cache dans une anémone."],
-          "fact": "Le poisson-clown habite dans une anémone de mer, qui le protège des gros poissons." },
-        { "id": "etoile-mer", "name": "Étoile de mer", "the": "l’étoile de mer", "a": "une étoile de mer",
-          "hints": ["L’étoile de mer a cinq bras, comme une étoile.", "L’étoile de mer vit au fond de l’eau, sur les rochers."],
-          "fact": "Si l’étoile de mer perd un bras, il repousse !" },
-        { "id": "meduse", "name": "Méduse", "the": "la méduse", "a": "une méduse",
-          "hints": ["La méduse est transparente, comme de la gelée.", "La méduse a de longs filaments qui flottent sous elle."],
-          "fact": "La méduse n’a pas de cerveau : elle se laisse porter par les vagues." },
-        { "id": "crabe", "name": "Crabe", "the": "le crabe", "a": "un crabe",
-          "hints": ["Le crabe a deux grosses pinces.", "Le crabe a une carapace et beaucoup de pattes."],
-          "fact": "Le crabe marche de côté : c’est plus facile pour lui avec ses pattes !" },
-        { "id": "hippocampe", "name": "Hippocampe", "the": "l’hippocampe", "a": "un hippocampe",
-          "hints": ["L’hippocampe a une tête de petit cheval.", "L’hippocampe a une queue enroulée."],
-          "fact": "Chez les hippocampes, c’est le papa qui porte les bébés dans une poche sur son ventre !" },
-        { "id": "raie", "name": "Raie manta", "the": "la raie manta", "a": "une raie manta",
-          "hints": ["La raie manta est plate et large, comme un grand cerf-volant.", "La raie manta bat ses nageoires comme des ailes."],
-          "fact": "Quand elle nage, la raie manta a l’air de voler dans l’eau." }
-      ]
+        {
+          "id": "baleine",
+          "name": "Baleine",
+          "the": "la baleine",
+          "a": "une baleine",
+          "hints": [
+            "La baleine à bosse est immense, plus longue qu’un autobus.",
+            "La baleine à bosse a de très longues nageoires, comme de grandes ailes."
+          ],
+          "facts": [
+            "La baleine respire de l’air : elle remonte à la surface et souffle un grand jet par les narines qu’elle a sur le dessus de la tête.",
+            "Les baleines à bosse chantent : leurs chants peuvent durer des heures et s’entendre très loin sous l’eau."
+          ]
+        },
+        {
+          "id": "dauphin",
+          "name": "Dauphin",
+          "the": "le dauphin",
+          "a": "un dauphin",
+          "hints": [
+            "Le dauphin est gris, avec un museau allongé.",
+            "Le dauphin a un aileron recourbé sur le dos."
+          ],
+          "facts": [
+            "Le dauphin est un mammifère, comme nous : il respire de l’air par un trou sur le dessus de sa tête.",
+            "Chaque dauphin a son propre sifflement, un peu comme un prénom, que les autres dauphins reconnaissent."
+          ]
+        },
+        {
+          "id": "orque",
+          "name": "Orque",
+          "the": "l’orque",
+          "a": "une orque",
+          "hints": [
+            "L’orque est noire et blanche, avec une tache blanche près de l’œil.",
+            "L’orque a un très grand aileron sur le dos."
+          ],
+          "facts": [
+            "L’orque n’est pas une baleine : c’est le plus grand des dauphins.",
+            "Les orques vivent en famille toute leur vie, souvent avec leur maman et leur grand-mère."
+          ]
+        },
+        {
+          "id": "requin",
+          "name": "Requin",
+          "the": "le requin",
+          "a": "un requin",
+          "hints": [
+            "Le requin a un aileron pointu sur le dos.",
+            "Le requin a un museau pointu et un corps tout fin."
+          ],
+          "facts": [
+            "Le requin perd des dents toute sa vie, mais une nouvelle dent pousse aussitôt pour la remplacer.",
+            "Les requins existaient déjà bien avant les dinosaures."
+          ]
+        },
+        {
+          "id": "tortue-mer",
+          "name": "Tortue de mer",
+          "the": "la tortue de mer",
+          "a": "une tortue de mer",
+          "hints": [
+            "La tortue de mer a une carapace sur le dos.",
+            "La tortue de mer nage avec de grandes nageoires, comme des rames."
+          ],
+          "facts": [
+            "La tortue de mer pond ses œufs dans le sable ; à leur naissance, les bébés tortues courent jusqu’à la mer.",
+            "La tortue de mer peut parcourir des milliers de kilomètres dans l’océan."
+          ]
+        },
+        {
+          "id": "pieuvre",
+          "name": "Pieuvre",
+          "the": "la pieuvre",
+          "a": "une pieuvre",
+          "hints": [
+            "La pieuvre a huit longs bras.",
+            "La pieuvre a des ventouses sous les bras et un corps tout mou."
+          ],
+          "facts": [
+            "La pieuvre a trois cœurs et du sang bleu.",
+            "La pieuvre change de couleur en un instant pour se cacher, et elle sait même ouvrir un bocal pour attraper ce qu’il y a dedans."
+          ]
+        },
+        {
+          "id": "poisson-clown",
+          "name": "Poisson-clown",
+          "the": "le poisson-clown",
+          "a": "un poisson-clown",
+          "hints": [
+            "Le poisson-clown est orange, avec des bandes blanches bordées de noir.",
+            "Le poisson-clown vit au milieu des tentacules d’une anémone de mer."
+          ],
+          "facts": [
+            "L’anémone pique les autres poissons, mais pas le poisson-clown : une couche de mucus protège sa peau.",
+            "Le poisson-clown et l’anémone s’entraident : l’anémone le protège, et lui la nettoie et éloigne les poissons qui veulent la manger."
+          ]
+        },
+        {
+          "id": "etoile-mer",
+          "name": "Étoile de mer",
+          "the": "l’étoile de mer",
+          "a": "une étoile de mer",
+          "hints": [
+            "L’étoile de mer a cinq bras, comme une étoile.",
+            "L’étoile de mer vit au fond de la mer, sur les rochers et le sable."
+          ],
+          "facts": [
+            "L’étoile de mer a un tout petit œil au bout de chaque bras.",
+            "Si elle perd un bras, l’étoile de mer peut le faire repousser."
+          ]
+        },
+        {
+          "id": "meduse",
+          "name": "Méduse",
+          "the": "la méduse",
+          "a": "une méduse",
+          "hints": [
+            "La méduse est transparente, comme de la gelée.",
+            "La méduse a de longs filaments qui flottent sous elle."
+          ],
+          "facts": [
+            "La méduse n’a ni cerveau ni cœur, et son corps est fait presque entièrement d’eau.",
+            "Les filaments de la méduse piquent pour attraper de petites proies : il vaut mieux ne pas les toucher."
+          ]
+        },
+        {
+          "id": "crabe",
+          "name": "Crabe",
+          "the": "le crabe",
+          "a": "un crabe",
+          "hints": [
+            "Le crabe a deux grosses pinces.",
+            "Le crabe a une carapace dure et huit pattes pour marcher."
+          ],
+          "facts": [
+            "Le crabe marche de côté, car ses pattes se plient plus facilement dans ce sens.",
+            "Pour grandir, le crabe quitte sa vieille carapace devenue trop petite : on dit qu’il mue."
+          ]
+        },
+        {
+          "id": "hippocampe",
+          "name": "Hippocampe",
+          "the": "l’hippocampe",
+          "a": "un hippocampe",
+          "hints": [
+            "L’hippocampe a une tête qui ressemble à celle d’un petit cheval.",
+            "L’hippocampe a une queue enroulée pour s’accrocher aux algues."
+          ],
+          "facts": [
+            "L’hippocampe est un poisson ; chez lui, c’est le papa qui porte les œufs dans une poche sur son ventre.",
+            "L’hippocampe nage debout, très lentement, en agitant une petite nageoire sur son dos."
+          ]
+        },
+        {
+          "id": "raie",
+          "name": "Raie manta",
+          "the": "la raie manta",
+          "a": "une raie manta",
+          "hints": [
+            "La raie manta est plate et très large, comme un grand cerf-volant.",
+            "La raie manta bat ses nageoires comme des ailes."
+          ],
+          "facts": [
+            "La raie manta est l’une des plus grandes raies du monde : d’une nageoire à l’autre, elle peut mesurer sept mètres.",
+            "Malgré sa grande taille, la raie manta mange du plancton, de toutes petites bêtes qui flottent dans l’eau."
+          ]
+        }
+      ],
+      "group": "animaux"
     },
     {
       "id": "glaces",
@@ -200,46 +741,179 @@
       "short": "Glaces",
       "cover": "ours-polaire",
       "accent": "#5b9ec9",
-      "intro": "Brrr ! Bienvenue au pays des glaces. Ici, les animaux vivent dans le froid et la neige.",
-      "outro": "Bravo ! Tu as bravé le froid avec les animaux des glaces.",
+      "intro": "Bienvenue au pays des glaces, tout au nord et tout au sud de la Terre, là où il fait très froid.",
+      "outro": "Bravo ! Tu connais maintenant les animaux du grand froid.",
       "animals": [
-        { "id": "ours-polaire", "name": "Ours polaire", "the": "l’ours polaire", "a": "un ours polaire",
-          "hints": ["L’ours polaire est tout blanc.", "L’ours polaire est très grand, avec un museau noir."],
-          "fact": "Sous sa fourrure blanche, l’ours polaire a la peau noire, pour garder la chaleur du soleil." },
-        { "id": "manchot", "name": "Manchot", "the": "le manchot", "a": "un manchot",
-          "hints": ["Le manchot est noir et blanc, et il marche en se dandinant.", "Le manchot empereur a une tache jaune près du cou."],
-          "fact": "Le manchot ne vole pas dans le ciel, mais il nage très bien sous l’eau." },
-        { "id": "phoque", "name": "Phoque", "the": "le phoque", "a": "un phoque",
-          "hints": ["Le phoque a un corps tout rond et des nageoires.", "Le phoque a de grands yeux noirs et des moustaches."],
-          "fact": "Le phoque est lent sur la glace, mais rapide et agile dans l’eau." },
-        { "id": "morse", "name": "Morse", "the": "le morse", "a": "un morse",
-          "hints": ["Le morse a deux grandes défenses blanches.", "Le morse a une grosse moustache."],
-          "fact": "Le morse s’aide de ses défenses pour grimper sur la glace." },
-        { "id": "renard-polaire", "name": "Renard polaire", "the": "le renard polaire", "a": "un renard polaire",
-          "hints": ["Le renard polaire est tout blanc en hiver.", "Le renard polaire a de petites oreilles rondes et une queue touffue."],
-          "fact": "En été, le renard polaire change de couleur et devient marron !" },
-        { "id": "harfang", "name": "Harfang des neiges", "the": "le harfang des neiges", "a": "un harfang des neiges",
-          "hints": ["Le harfang des neiges est une chouette toute blanche.", "Le harfang des neiges a de grands yeux jaunes."],
-          "fact": "Le harfang des neiges chasse même en plein jour, car en été, il fait jour tout le temps dans le grand Nord." },
-        { "id": "renne", "name": "Renne", "the": "le renne", "a": "un renne",
-          "hints": ["Le renne a de grands bois sur la tête.", "Le renne a un pelage brun et blanc, très épais."],
-          "fact": "Chez les rennes, même les mamans ont des bois !" },
-        { "id": "boeuf-musque", "name": "Bœuf musqué", "the": "le bœuf musqué", "a": "un bœuf musqué",
-          "hints": ["Le bœuf musqué a de très longs poils qui touchent presque le sol.", "Le bœuf musqué a des cornes recourbées."],
-          "fact": "Quand il y a du danger, les bœufs musqués se serrent en cercle pour protéger les petits." },
-        { "id": "lievre-arctique", "name": "Lièvre arctique", "the": "le lièvre arctique", "a": "un lièvre arctique",
-          "hints": ["Le lièvre arctique est blanc, avec de longues oreilles.", "Le lièvre arctique a le bout des oreilles tout noir."],
-          "fact": "Le lièvre arctique a de grandes pattes, comme des raquettes pour marcher sur la neige." },
-        { "id": "macareux", "name": "Macareux", "the": "le macareux", "a": "un macareux",
-          "hints": ["Le macareux a un gros bec orange, jaune et gris.", "Le macareux est noir et blanc, comme un petit clown."],
-          "fact": "Le macareux peut tenir plein de petits poissons dans son bec en même temps !" },
-        { "id": "beluga", "name": "Béluga", "the": "le béluga", "a": "un béluga",
-          "hints": ["Le béluga est une baleine toute blanche.", "Le béluga a une grosse tête toute ronde."],
-          "fact": "Le béluga chante si bien qu’on l’appelle le canari des mers." },
-        { "id": "loup-arctique", "name": "Loup arctique", "the": "le loup arctique", "a": "un loup arctique",
-          "hints": ["Le loup arctique est blanc, comme la neige.", "Le loup arctique ressemble à un grand chien blanc."],
-          "fact": "Le loup arctique a une fourrure si épaisse qu’il peut dormir dans la neige sans avoir froid." }
-      ]
+        {
+          "id": "ours-polaire",
+          "name": "Ours polaire",
+          "the": "l’ours polaire",
+          "a": "un ours polaire",
+          "hints": [
+            "L’ours polaire a une épaisse fourrure blanche.",
+            "L’ours polaire est très grand, avec un museau noir."
+          ],
+          "facts": [
+            "Sous sa fourrure blanche, l’ours polaire a la peau noire, qui absorbe la chaleur du soleil.",
+            "L’ours polaire est un excellent nageur : il peut nager pendant des heures dans l’eau glacée."
+          ]
+        },
+        {
+          "id": "manchot",
+          "name": "Manchot",
+          "the": "le manchot",
+          "a": "un manchot",
+          "hints": [
+            "Le manchot est noir et blanc, et il marche en se dandinant.",
+            "Le manchot empereur a des taches jaunes près du cou."
+          ],
+          "facts": [
+            "Chez le manchot empereur, c’est le papa qui garde l’œuf au chaud sur ses pattes pendant tout l’hiver.",
+            "Le manchot ne vole pas, mais ses ailes en forme de nageoires lui permettent de nager très vite."
+          ]
+        },
+        {
+          "id": "phoque",
+          "name": "Phoque",
+          "the": "le phoque",
+          "a": "un phoque",
+          "hints": [
+            "Le phoque a un corps rond et des nageoires à la place des pattes.",
+            "Le phoque a de grands yeux noirs et de longues moustaches."
+          ],
+          "facts": [
+            "Le phoque a une épaisse couche de graisse sous la peau, qui le protège du froid.",
+            "Le phoque peut rester longtemps sous l’eau en retenant sa respiration."
+          ]
+        },
+        {
+          "id": "morse",
+          "name": "Morse",
+          "the": "le morse",
+          "a": "un morse",
+          "hints": [
+            "Le morse a deux longues défenses blanches.",
+            "Le morse a une grosse moustache et une peau épaisse et plissée."
+          ],
+          "facts": [
+            "Le morse se sert de ses défenses comme de crochets pour se hisser sur la glace.",
+            "Avec ses moustaches très sensibles, le morse cherche des coquillages au fond de la mer."
+          ]
+        },
+        {
+          "id": "renard-polaire",
+          "name": "Renard polaire",
+          "the": "le renard polaire",
+          "a": "un renard polaire",
+          "hints": [
+            "Le renard polaire est tout blanc en hiver.",
+            "Le renard polaire a de petites oreilles rondes et une queue très touffue."
+          ],
+          "facts": [
+            "En été, le renard polaire change de pelage et devient brun, pour se cacher entre les rochers.",
+            "Pour dormir, le renard polaire s’enroule dans sa grande queue, comme dans une couverture."
+          ]
+        },
+        {
+          "id": "harfang",
+          "name": "Harfang des neiges",
+          "the": "le harfang des neiges",
+          "a": "un harfang des neiges",
+          "hints": [
+            "Le harfang des neiges est une grande chouette blanche.",
+            "Le harfang des neiges a de grands yeux jaunes."
+          ],
+          "facts": [
+            "Le harfang chasse aussi le jour, car en été, dans le Grand Nord, le soleil ne se couche presque pas.",
+            "Le harfang a des plumes jusque sur les pattes, pour ne pas avoir froid."
+          ]
+        },
+        {
+          "id": "renne",
+          "name": "Renne",
+          "the": "le renne",
+          "a": "un renne",
+          "hints": [
+            "Le renne a de grands bois sur la tête.",
+            "Le renne a un épais pelage brun, plus clair sur le cou."
+          ],
+          "facts": [
+            "Chez les rennes, les mâles et les femelles ont des bois.",
+            "En hiver, le renne gratte la neige avec ses sabots pour trouver du lichen à manger."
+          ]
+        },
+        {
+          "id": "boeuf-musque",
+          "name": "Bœuf musqué",
+          "the": "le bœuf musqué",
+          "a": "un bœuf musqué",
+          "hints": [
+            "Le bœuf musqué a de très longs poils qui descendent presque jusqu’au sol.",
+            "Le bœuf musqué a des cornes qui se recourbent sur les côtés de la tête."
+          ],
+          "facts": [
+            "Sous ses longs poils, le bœuf musqué a un duvet très chaud, plus doux que la laine du mouton.",
+            "Face au danger, les bœufs musqués se mettent en cercle, les petits au milieu, pour les protéger."
+          ]
+        },
+        {
+          "id": "lievre-arctique",
+          "name": "Lièvre variable",
+          "the": "le lièvre variable",
+          "a": "un lièvre variable",
+          "hints": [
+            "Le lièvre variable est tout blanc en hiver, avec de longues oreilles.",
+            "Le lièvre variable a le bout des oreilles noir."
+          ],
+          "facts": [
+            "On l’appelle lièvre variable, car son pelage change : brun en été, blanc en hiver, pour se cacher dans la neige.",
+            "Le lièvre variable a de grandes pattes arrière qui l’aident à courir et à bondir sur la neige."
+          ]
+        },
+        {
+          "id": "macareux",
+          "name": "Macareux",
+          "the": "le macareux",
+          "a": "un macareux",
+          "hints": [
+            "Le macareux a un gros bec coloré, orange, jaune et gris.",
+            "Le macareux est noir et blanc, avec des pattes orange."
+          ],
+          "facts": [
+            "Le macareux peut tenir une dizaine de petits poissons dans son bec en même temps.",
+            "Le macareux est un très bon nageur : il plonge sous l’eau en battant des ailes."
+          ]
+        },
+        {
+          "id": "beluga",
+          "name": "Béluga",
+          "the": "le béluga",
+          "a": "un béluga",
+          "hints": [
+            "Le béluga est une baleine toute blanche.",
+            "Le béluga a une grosse tête ronde et bombée."
+          ],
+          "facts": [
+            "Le béluga fait beaucoup de sons différents : on le surnomme le canari des mers.",
+            "Le béluga peut tourner la tête de tous les côtés, ce que peu de baleines savent faire."
+          ]
+        },
+        {
+          "id": "loup-arctique",
+          "name": "Loup arctique",
+          "the": "le loup arctique",
+          "a": "un loup arctique",
+          "hints": [
+            "Le loup arctique a une épaisse fourrure blanche.",
+            "Le loup arctique ressemble à un grand chien blanc."
+          ],
+          "facts": [
+            "Le loup arctique vit dans le Grand Nord, où il fait nuit presque tout l’hiver.",
+            "Sa fourrure blanche et épaisse le protège du froid et le rend difficile à voir dans la neige."
+          ]
+        }
+      ],
+      "group": "animaux"
     },
     {
       "id": "jungle",
@@ -247,46 +921,371 @@
       "short": "Jungle",
       "cover": "tigre",
       "accent": "#3f9a6b",
-      "intro": "Bienvenue dans la jungle ! Il fait chaud, et les animaux vivent dans les grands arbres.",
-      "outro": "Quelle aventure dans la jungle ! Les animaux te font coucou.",
+      "intro": "Bienvenue dans la jungle, une forêt chaude et humide où il pleut presque tous les jours.",
+      "outro": "Bravo ! Tu connais maintenant des animaux de la jungle.",
       "animals": [
-        { "id": "tigre", "name": "Tigre", "the": "le tigre", "a": "un tigre",
-          "hints": ["Le tigre est orange, avec des rayures noires.", "Le tigre est un très grand chat."],
-          "fact": "Le tigre adore l’eau : c’est un très bon nageur !" },
-        { "id": "jaguar", "name": "Jaguar", "the": "le jaguar", "a": "un jaguar",
-          "hints": ["Le jaguar est jaune, avec des taches noires en forme de petites fleurs.", "Le jaguar a une grosse tête et des pattes puissantes."],
-          "fact": "Le jaguar grimpe aux arbres, et il nage très bien." },
-        { "id": "gorille", "name": "Gorille", "the": "le gorille", "a": "un gorille",
-          "hints": ["Le gorille est un grand singe noir, très fort.", "Le gorille marche en s’appuyant sur ses mains."],
-          "fact": "Le gorille est très fort, mais il est calme, et il mange surtout des plantes." },
-        { "id": "orang-outan", "name": "Orang-outan", "the": "l’orang-outan", "a": "un orang-outan",
-          "hints": ["L’orang-outan est un grand singe avec des poils orange.", "L’orang-outan a de très longs bras."],
-          "fact": "Chaque soir, l’orang-outan se fabrique un lit de feuilles en haut d’un arbre." },
-        { "id": "ara", "name": "Ara", "the": "l’ara", "a": "un ara",
-          "hints": ["L’ara est un perroquet aux plumes de toutes les couleurs.", "L’ara a un gros bec crochu et une longue queue."],
-          "fact": "L’ara casse les noix les plus dures avec son bec très puissant." },
-        { "id": "toucan", "name": "Toucan", "the": "le toucan", "a": "un toucan",
-          "hints": ["Le toucan a un énorme bec orange.", "Le toucan est noir, avec une gorge blanche."],
-          "fact": "Le bec du toucan est très grand, mais il est léger comme une éponge." },
-        { "id": "paresseux", "name": "Paresseux", "the": "le paresseux", "a": "un paresseux",
-          "hints": ["Le paresseux reste accroché aux branches.", "Le paresseux a de longues griffes, et il a l’air de sourire."],
-          "fact": "Le paresseux bouge très, très lentement, et il dort beaucoup." },
-        { "id": "cameleon", "name": "Caméléon", "the": "le caméléon", "a": "un caméléon",
-          "hints": ["Le caméléon a des yeux qui bougent chacun de leur côté.", "Le caméléon a une queue enroulée comme un escargot."],
-          "fact": "Le caméléon attrape les insectes avec sa langue, aussi longue que son corps !" },
-        { "id": "grenouille", "name": "Grenouille", "the": "la grenouille", "a": "une grenouille",
-          "hints": ["La grenouille de la jungle est verte, avec de grands yeux rouges.", "La grenouille a de longues pattes pour sauter."],
-          "fact": "Cette grenouille dort le jour, bien cachée sous une feuille." },
-        { "id": "lemurien", "name": "Lémurien", "the": "le lémurien", "a": "un lémurien",
-          "hints": ["Le lémurien a une longue queue rayée noir et blanc.", "Le lémurien a de grands yeux orange."],
-          "fact": "Le matin, les lémuriens prennent un bain de soleil, les bras ouverts." },
-        { "id": "tapir", "name": "Tapir", "the": "le tapir", "a": "un tapir",
-          "hints": ["Le tapir a un nez allongé, comme une petite trompe.", "Ce tapir est noir, avec le dos blanc."],
-          "fact": "Les bébés tapirs ont des rayures et des taches, comme une pastèque !" },
-        { "id": "python", "name": "Python vert", "the": "le python vert", "a": "un python vert",
-          "hints": ["Le python vert est un serpent tout vert.", "Le python vert n’a pas de pattes, et il s’enroule autour des branches."],
-          "fact": "Le python vert est jaune ou rouge quand il est bébé, et il devient vert en grandissant." }
+        {
+          "id": "tigre",
+          "name": "Tigre",
+          "the": "le tigre",
+          "a": "un tigre",
+          "hints": [
+            "Le tigre a un pelage orange avec des rayures noires.",
+            "Le tigre est le plus grand des félins."
+          ],
+          "facts": [
+            "Chaque tigre a des rayures uniques, et même sa peau est rayée sous les poils.",
+            "Contrairement à beaucoup de félins, le tigre adore l’eau : c’est un excellent nageur."
+          ]
+        },
+        {
+          "id": "jaguar",
+          "name": "Jaguar",
+          "the": "le jaguar",
+          "a": "un jaguar",
+          "hints": [
+            "Le jaguar a un pelage jaune couvert de taches noires en forme de rosettes.",
+            "Le jaguar a une grosse tête et des pattes très puissantes."
+          ],
+          "facts": [
+            "Le jaguar est le plus grand félin d’Amérique.",
+            "La morsure du jaguar est si puissante qu’il peut briser la carapace d’une tortue."
+          ]
+        },
+        {
+          "id": "gorille",
+          "name": "Gorille",
+          "the": "le gorille",
+          "a": "un gorille",
+          "hints": [
+            "Le gorille est un grand singe au pelage noir.",
+            "Le gorille a de longs bras très musclés et une grosse tête."
+          ],
+          "facts": [
+            "Le gorille est le plus grand des singes ; malgré sa force, il est calme et mange surtout des feuilles et des fruits.",
+            "Chaque soir, le gorille se fabrique un nid de feuilles pour dormir."
+          ]
+        },
+        {
+          "id": "orang-outan",
+          "name": "Orang-outan",
+          "the": "l’orang-outan",
+          "a": "un orang-outan",
+          "hints": [
+            "L’orang-outan est un grand singe aux longs poils orange.",
+            "L’orang-outan a des bras très longs, plus longs que ses jambes."
+          ],
+          "facts": [
+            "En malais, le mot orang-outan veut dire « homme de la forêt ».",
+            "L’orang-outan passe presque toute sa vie dans les arbres, et il se fabrique chaque soir un lit de branches."
+          ]
+        },
+        {
+          "id": "ara",
+          "name": "Ara",
+          "the": "l’ara",
+          "a": "un ara",
+          "hints": [
+            "L’ara est un perroquet aux plumes rouges, jaunes et bleues.",
+            "L’ara a un gros bec crochu et une très longue queue."
+          ],
+          "facts": [
+            "Avec son bec puissant, l’ara casse des noix très dures.",
+            "Les aras vivent en couple toute leur vie, et ils peuvent vivre plus de cinquante ans."
+          ]
+        },
+        {
+          "id": "toucan",
+          "name": "Toucan",
+          "the": "le toucan",
+          "a": "un toucan",
+          "hints": [
+            "Le toucan a un énorme bec orange.",
+            "Le toucan a un corps noir et une gorge blanche."
+          ],
+          "facts": [
+            "Le bec du toucan est très grand, mais léger : l’intérieur ressemble à une mousse pleine d’air.",
+            "Le toucan se sert de son grand bec pour attraper les fruits au bout des branches, et pour se rafraîchir quand il fait chaud."
+          ]
+        },
+        {
+          "id": "paresseux",
+          "name": "Paresseux",
+          "the": "le paresseux",
+          "a": "un paresseux",
+          "hints": [
+            "Le paresseux s’accroche aux branches avec ses longues griffes.",
+            "Le paresseux a un pelage gris-brun et un visage qui a l’air de sourire."
+          ],
+          "facts": [
+            "Le paresseux bouge très lentement et dort une grande partie de la journée.",
+            "De petites algues vertes poussent dans la fourrure du paresseux et l’aident à se cacher dans les feuilles."
+          ]
+        },
+        {
+          "id": "cameleon",
+          "name": "Caméléon",
+          "the": "le caméléon",
+          "a": "un caméléon",
+          "hints": [
+            "Le caméléon a des yeux qui bougent chacun de leur côté.",
+            "Le caméléon a une queue enroulée comme un escargot."
+          ],
+          "facts": [
+            "Le caméléon change de couleur selon son humeur et la température.",
+            "Le caméléon attrape les insectes en projetant sa langue collante, aussi longue que son corps."
+          ]
+        },
+        {
+          "id": "grenouille",
+          "name": "Grenouille",
+          "the": "la grenouille",
+          "a": "une grenouille",
+          "hints": [
+            "Cette grenouille est verte, avec de grands yeux rouges.",
+            "Cette grenouille a de longues pattes et des doigts orange."
+          ],
+          "facts": [
+            "Cette grenouille s’appelle la rainette aux yeux rouges : le jour, elle dort collée sous une feuille, les yeux fermés.",
+            "Les doigts de la rainette ont de petites ventouses qui lui permettent de grimper sur les feuilles."
+          ]
+        },
+        {
+          "id": "lemurien",
+          "name": "Lémurien",
+          "the": "le lémurien",
+          "a": "un lémurien",
+          "hints": [
+            "Le lémurien a une longue queue rayée de noir et de blanc.",
+            "Le lémurien a un museau pointu et de grands yeux orange."
+          ],
+          "facts": [
+            "Les lémuriens vivent seulement à Madagascar, une grande île près de l’Afrique.",
+            "Le matin, les lémuriens prennent un bain de soleil, les bras ouverts, pour se réchauffer."
+          ]
+        },
+        {
+          "id": "tapir",
+          "name": "Tapir",
+          "the": "le tapir",
+          "a": "un tapir",
+          "hints": [
+            "Le tapir a un nez allongé, comme une petite trompe.",
+            "Ce tapir est noir, avec une grande tache blanche sur le dos."
+          ],
+          "facts": [
+            "Le nez du tapir est souple : il s’en sert pour attraper les feuilles et les fruits.",
+            "Les bébés tapirs ont un pelage rayé et tacheté, qui les cache dans la forêt."
+          ]
+        },
+        {
+          "id": "python",
+          "name": "Python vert",
+          "the": "le python vert",
+          "a": "un python vert",
+          "hints": [
+            "Le python vert est un serpent tout vert, avec de petites taches blanches.",
+            "Le python vert s’enroule autour des branches."
+          ],
+          "facts": [
+            "Le python vert est jaune ou rouge quand il est petit, et devient vert en grandissant.",
+            "Le python n’est pas venimeux : il serre ses proies pour les attraper."
+          ]
+        }
+      ],
+      "group": "animaux"
+    },
+    {
+      "id": "vehicules",
+      "name": "Les véhicules",
+      "short": "Véhicules",
+      "cover": "pompiers",
+      "accent": "#d4553f",
+      "group": "plus",
+      "intro": "En route ! Voici des véhicules qui roulent, qui volent et qui naviguent.",
+      "outro": "Bravo ! Tu connais maintenant plein de véhicules.",
+      "animals": [
+        {
+          "id": "tracteur",
+          "name": "Tracteur",
+          "the": "le tracteur",
+          "a": "un tracteur",
+          "hints": [
+            "Le tracteur a d’énormes roues à l’arrière et de petites roues à l’avant.",
+            "Le tracteur roule dans les champs, à la ferme."
+          ],
+          "facts": [
+            "Le tracteur tire de lourdes machines pour labourer la terre, semer les graines et faire la récolte.",
+            "Les grosses roues du tracteur ont des crampons pour ne pas glisser dans la boue."
+          ]
+        },
+        {
+          "id": "pompiers",
+          "name": "Camion de pompiers",
+          "the": "le camion de pompiers",
+          "a": "un camion de pompiers",
+          "hints": [
+            "Le camion de pompiers est tout rouge, avec une grande échelle.",
+            "Le camion de pompiers a des gyrophares bleus et une sirène."
+          ],
+          "facts": [
+            "Le camion de pompiers transporte de l’eau, des tuyaux et une grande échelle pour éteindre les incendies et sauver les gens.",
+            "Quand il part en urgence, le camion de pompiers allume ses gyrophares et fait pin-pon, pour qu’on le laisse passer."
+          ]
+        },
+        {
+          "id": "police",
+          "name": "Voiture de police",
+          "the": "la voiture de police",
+          "a": "une voiture de police",
+          "hints": [
+            "La voiture de police a le mot police écrit sur les côtés.",
+            "La voiture de police a des gyrophares bleus sur le toit."
+          ],
+          "facts": [
+            "Les policiers se déplacent dans cette voiture pour aider les gens et veiller à la sécurité de tous.",
+            "Quand elle part en urgence, la voiture de police allume ses lumières bleues et sa sirène."
+          ]
+        },
+        {
+          "id": "ambulance",
+          "name": "Ambulance",
+          "the": "l’ambulance",
+          "a": "une ambulance",
+          "hints": [
+            "L’ambulance est blanche et jaune, avec des gyrophares bleus sur le toit.",
+            "L’ambulance a de grandes portes à l’arrière pour faire entrer un brancard."
+          ],
+          "facts": [
+            "L’ambulance emmène très vite les personnes malades ou blessées à l’hôpital.",
+            "Dans l’ambulance, il y a un lit à roulettes, qu’on appelle un brancard, et tout ce qu’il faut pour soigner."
+          ]
+        },
+        {
+          "id": "bus",
+          "name": "Bus",
+          "the": "le bus",
+          "a": "un bus",
+          "hints": [
+            "Le bus est très long, avec de grandes fenêtres.",
+            "Le bus a plusieurs portes pour que les passagers montent et descendent."
+          ],
+          "facts": [
+            "Le bus transporte des dizaines de personnes à la fois, et il s’arrête aux arrêts de bus.",
+            "Prendre le bus plutôt que la voiture, c’est moins de bouchons et moins de pollution dans la ville."
+          ]
+        },
+        {
+          "id": "train",
+          "name": "Train",
+          "the": "le train",
+          "a": "un train",
+          "hints": [
+            "Le train est très long, avec des wagons accrochés les uns aux autres.",
+            "Le train roule sur des rails."
+          ],
+          "facts": [
+            "Certains trains, comme le TGV, roulent à plus de trois cents kilomètres à l’heure.",
+            "Le train ne peut rouler que sur ses rails : deux longues barres de métal posées sur le sol."
+          ]
+        },
+        {
+          "id": "avion",
+          "name": "Avion",
+          "the": "l’avion",
+          "a": "un avion",
+          "hints": [
+            "L’avion a deux grandes ailes et une queue.",
+            "L’avion vole très haut dans le ciel."
+          ],
+          "facts": [
+            "L’avion peut transporter des centaines de passagers très loin, jusqu’à l’autre bout du monde.",
+            "Pour décoller, l’avion roule très vite sur une longue piste, puis ses ailes le soulèvent dans les airs."
+          ]
+        },
+        {
+          "id": "helicoptere",
+          "name": "Hélicoptère",
+          "the": "l’hélicoptère",
+          "a": "un hélicoptère",
+          "hints": [
+            "L’hélicoptère a de grandes pales qui tournent sur le toit.",
+            "L’hélicoptère a une longue queue, avec une petite hélice au bout."
+          ],
+          "facts": [
+            "Grâce à ses pales qui tournent, l’hélicoptère peut monter tout droit et rester immobile dans les airs.",
+            "L’hélicoptère peut se poser presque partout : on s’en sert pour secourir des gens en montagne ou en mer."
+          ]
+        },
+        {
+          "id": "bateau",
+          "name": "Bateau",
+          "the": "le bateau",
+          "a": "un bateau",
+          "hints": [
+            "Ce bateau a de grandes voiles blanches.",
+            "Le bateau flotte sur l’eau."
+          ],
+          "facts": [
+            "Le voilier avance grâce au vent qui pousse ses voiles.",
+            "Sur un bateau, l’avant s’appelle la proue, et l’arrière s’appelle la poupe."
+          ]
+        },
+        {
+          "id": "velo",
+          "name": "Vélo",
+          "the": "le vélo",
+          "a": "un vélo",
+          "hints": [
+            "Le vélo a deux roues, un guidon et des pédales.",
+            "Le vélo a une selle pour s’asseoir."
+          ],
+          "facts": [
+            "Quand on appuie sur les pédales, une chaîne fait tourner la roue arrière, et le vélo avance.",
+            "Le vélo ne fait pas de bruit et ne pollue pas l’air."
+          ]
+        },
+        {
+          "id": "pelleteuse",
+          "name": "Pelleteuse",
+          "the": "la pelleteuse",
+          "a": "une pelleteuse",
+          "hints": [
+            "La pelleteuse a un long bras, avec un godet au bout.",
+            "La pelleteuse est jaune, et on la voit sur les chantiers."
+          ],
+          "facts": [
+            "Avec son bras et son godet, la pelleteuse creuse des trous et soulève de la terre très lourde.",
+            "Le conducteur de la pelleteuse est assis dans une cabine qui peut tourner sur elle-même."
+          ]
+        },
+        {
+          "id": "poubelle",
+          "name": "Camion poubelle",
+          "the": "le camion poubelle",
+          "a": "un camion poubelle",
+          "hints": [
+            "Le camion poubelle a une grande benne à l’arrière.",
+            "Le camion poubelle passe dans les rues pour ramasser les poubelles."
+          ],
+          "facts": [
+            "Le camion poubelle soulève les bacs avec un bras mécanique et les vide dans sa benne.",
+            "Les déchets que l’on trie, comme le papier et le plastique, sont recyclés pour fabriquer de nouveaux objets."
+          ]
+        }
       ]
+    },
+    {
+      "id": "melange",
+      "name": "Le grand mélange",
+      "short": "Mélange",
+      "cover": null,
+      "accent": "#8a6fc4",
+      "group": "plus",
+      "mix": true,
+      "intro": "On mélange tout ! Des animaux et des véhicules : ouvre bien les yeux.",
+      "outro": "Bravo ! Tu as trouvé des animaux et des véhicules.",
+      "animals": []
     }
   ]
 }

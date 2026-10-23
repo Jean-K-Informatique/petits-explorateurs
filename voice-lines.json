@@ -88,7 +88,10 @@
     "puzzle-miss-1": "Pas tout à fait. Regarde bien la forme de la pièce.",
     "puzzle-miss-2": "Essaie un autre endroit, en regardant le modèle.",
     "memory-miss-1": "Pas pareil ! Essaie de te souvenir où ils sont.",
-    "memory-miss-2": "Ce ne sont pas les mêmes. Regarde bien, et réessaie."
+    "memory-miss-2": "Ce ne sont pas les mêmes. Regarde bien, et réessaie.",
+    "puzzle-miss-3": "Attention, ce n’est pas à cet endroit-là. Essaie ailleurs !",
+    "puzzle-start": "Voici un nouveau puzzle ! Remets les pièces à leur place.",
+    "puzzle-done": "Bravo, le puzzle est terminé !"
   },
   "names": {
     "martin": "Martin"

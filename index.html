@@ -11,7 +11,7 @@
     <link rel="manifest" href="./manifest.webmanifest" />
     <link rel="icon" href="./assets/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png" />
-    <link rel="stylesheet" href="./styles.css?v=14" />
+    <link rel="stylesheet" href="./styles.css?v=16" />
     <title>Petits Explorateurs</title>
   </head>
   <body>
@@ -32,7 +32,7 @@
         <div class="welcome-copy">
           <div class="eyebrow"><span class="eyebrow-dot"></span> On apprend en jouant</div>
           <h1 id="welcome-title">Prêt à partir<br />à l’aventure&nbsp;?</h1>
-          <p class="intro">72 animaux à découvrir dans six mondes.<br class="desktop-break" /> Touche, écoute et explore à ton rythme.</p>
+          <p class="intro">72 animaux et 12 véhicules à découvrir.<br class="desktop-break" /> Touche, écoute et explore à ton rythme.</p>
           <p class="picker-label">À quoi veux-tu jouer&nbsp;?</p>
           <div class="game-cards" aria-label="Choisir un jeu">
             <button class="game-card" data-activity="bubbles">
@@ -70,7 +70,10 @@
             <h1 id="worlds-title">Où partons-nous&nbsp;?</h1>
           </div>
         </div>
-        <div class="world-grid" id="world-grid" aria-label="Choisir un monde"></div>
+        <h2 class="worlds-section">Les animaux</h2>
+        <div class="world-grid" id="world-grid" aria-label="Choisir un monde d’animaux"></div>
+        <h2 class="worlds-section">Encore plus</h2>
+        <div class="world-grid" id="world-grid-plus" aria-label="Autres thèmes"></div>
         <div class="extra-modes" id="extra-modes">
           <p>Et aussi, dans les bulles&nbsp;:</p>
           <button class="extra-card" data-world="colors"><span aria-hidden="true">🎨</span><b>Les couleurs</b></button>
@@ -104,6 +107,7 @@
               <button class="listen-button" id="listen-button"><span class="listen-icon" aria-hidden="true">♫</span><span>Réécouter</span></button>
               <button class="hint-button hidden" id="puzzle-hint"><span aria-hidden="true">✦</span> Montre-moi</button>
             </div>
+            <div class="size-picker" aria-label="Nombre de pièces"><span>Pièces</span><div class="size-chips" id="puzzle-sizes"></div></div>
           </div>
           <div class="memory-board hidden" id="memory-board" role="group" aria-label="Cartes d’animaux à retrouver"></div>
           <div class="reveal hidden" id="reveal" role="dialog" aria-modal="false" aria-labelledby="reveal-name">
@@ -146,6 +150,11 @@
           <h2 id="parent-title">Réglages du jeu</h2>
           <label class="setting-row"><span><b>La voix de Lila</b><small>Une voix française, douce et claire</small></span><input type="checkbox" id="voice-setting" checked /><i class="switch"></i></label>
           <label class="setting-row"><span><b>Partie courte</b><small>3 découvertes au lieu de 5</small></span><input type="checkbox" id="short-setting" /><i class="switch"></i></label>
+          <div class="my-images">
+            <p class="my-images-title"><b>Mes images pour les puzzles</b><small>Ajoute des photos ou des dessins depuis l’appareil : ils restent sur cet appareil et ne sont jamais publiés.</small></p>
+            <div class="my-images-grid" id="my-images-grid"></div>
+            <label class="add-images">＋ Ajouter des images<input type="file" accept="image/*" multiple id="my-images-input" hidden /></label>
+          </div>
           <button class="credits-button" id="credits-button">Crédits des photos</button>
           <p class="privacy-note">Aucun compte, aucune publicité. La progression reste sur cet appareil.</p>
         </div>
@@ -176,7 +185,8 @@
     </main>
     <script src="./voice.js?v=11" defer></script>
     <script src="./game-engine.js?v=12" defer></script>
-    <script src="./puzzle-game.js?v=7" defer></script>
-    <script src="./game.js?v=15" defer></script>
+    <script src="./puzzle-game.js?v=11" defer></script>
+    <script src="./my-images.js?v=1" defer></script>
+    <script src="./game.js?v=16" defer></script>
   </body>
 </html>
