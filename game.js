@@ -85,8 +85,10 @@ function setScreen(name) {
   if (name === 'home') renderAlbumCount();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+// The 🔊 button mutes everything (Lila and sound effects); the parent setting only turns Lila off.
+function voiceOn() { return state.sound && state.voice; }
 function playVoice(...keys) {
-  if (!state.voice || !keys.flat().filter(Boolean).length) return Promise.resolve(false);
+  if (!voiceOn() || !keys.flat().filter(Boolean).length) return Promise.resolve(false);
   return window.VoiceBank ? window.VoiceBank.play(...keys) : Promise.resolve(false);
 }
 function playSound(type = 'success') {
@@ -283,7 +285,7 @@ function gentleMiss(item) {
 function celebrate(item) {
   state.busy = true; state.streak += 1;
   const pool = theme()?.animals || extraWorlds[state.world].items;
-  if (state.streak >= 3 && state.choices < Math.min(6, pool.length)) { state.choices += 1; state.streak = 0; }
+  if (state.streak >= 3 && state.choices < Math.min(4, pool.length)) { state.choices += 1; state.streak = 0; }
   const from = state.engine.pop(item.id); playSound('pop');
   if (item.kind !== 'animal') {
     setHint(`<b>${praiseText(Math.floor(Math.random() * 5))}</b>`, 'success');
@@ -309,7 +311,7 @@ let autoTimer = null; let autoToken = null;
 function autoAdvance(spoken, pause, action) {
   clearTimeout(autoTimer); const token = {}; autoToken = token;
   const go = () => { if (autoToken === token) { autoToken = null; action(); } };
-  if (!state.voice) { autoTimer = setTimeout(go, pause + 2800); return; }
+  if (!voiceOn()) { autoTimer = setTimeout(go, pause + 2800); return; }
   spoken.then(() => { if (autoToken === token) autoTimer = setTimeout(go, pause); });
 }
 function cancelAuto() { clearTimeout(autoTimer); autoToken = null; }
@@ -554,7 +556,8 @@ $('#reveal-listen').addEventListener('click', () => { const id = $('#reveal').da
 $('#reveal-photo').addEventListener('click', () => { const id = $('#reveal').dataset.animal; replayReveal(`a/${id}/name-1`, `a/${id}/fact`); });
 $('#sound-toggle').addEventListener('click', () => {
   state.sound = !state.sound; localStorage.setItem('pe-sound', state.sound ? 'on' : 'off'); syncSoundButton();
-  showToast(state.sound ? 'Les sons sont activés' : 'Les sons sont coupés');
+  if (!state.sound) window.VoiceBank?.stop();
+  showToast(state.sound ? 'Le son est activé' : 'Le son est coupé');
 });
 for (const [button, modal] of [['#parent-button', '#parent-modal'], ['#player-button', '#player-modal']]) $(button).addEventListener('click', () => $(modal).classList.remove('hidden'));
 $('#credits-button').addEventListener('click', () => { $('#parent-modal').classList.add('hidden'); showCredits(); });
@@ -570,6 +573,13 @@ $('#player-form').addEventListener('submit', (event) => { event.preventDefault()
 syncSoundButton();
 syncPlayer();
 window.VoiceBank?.ready.then(syncPlayer);
+
+// Keep the browser's own gestures out of the game: long-press menus, selection, dragging, pinch zoom.
+const editable = (target) => target instanceof Element && target.closest('input, textarea');
+document.addEventListener('contextmenu', (event) => { if (!editable(event.target)) event.preventDefault(); });
+document.addEventListener('selectstart', (event) => { if (!editable(event.target)) event.preventDefault(); });
+document.addEventListener('dragstart', (event) => event.preventDefault());
+for (const type of ['gesturestart', 'gesturechange']) document.addEventListener(type, (event) => event.preventDefault());
 
 fetch('./content/animals.json').then((response) => response.json()).then((data) => {
   for (const world of data.themes) for (const animal of world.animals) Object.assign(animal, { kind: 'animal', short: animal.name, world: world.id, photo: `./assets/animals/${animal.id}.webp` });

@@ -6,8 +6,11 @@
   font-synthesis: none; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased;
 }
 * { box-sizing: border-box; }
-html, body { margin: 0; min-width: 320px; min-height: 100%; background: var(--bg); }
-body { min-height: 100vh; }
+html, body { margin: 0; min-width: 320px; height: 100%; overflow: hidden; overscroll-behavior: none; background: var(--bg); }
+/* A game, not a web page: no text selection, long-press menus, image dragging or double-tap zoom. */
+html { -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; -webkit-text-size-adjust: 100%; touch-action: manipulation; }
+img { -webkit-user-drag: none; user-drag: none; }
+input, textarea { -webkit-user-select: text; user-select: text; -webkit-touch-callout: default; }
 button { font: inherit; color: inherit; border: 0; cursor: pointer; -webkit-tap-highlight-color: transparent; }
 button:focus-visible, a:focus-visible, input:focus-visible, canvas:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
 .hidden { display: none !important; }
@@ -15,7 +18,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, canvas:focus-visible
 .visually-hidden button:focus { position: fixed; left: 10px; bottom: 10px; width: auto; height: auto; padding: 12px; clip: auto; z-index: 9; }
 
 /* Shell ------------------------------------------------------------------------ */
-.app-shell { width: 100%; min-height: 100svh; position: relative; display: flex; flex-direction: column; overflow: hidden; background: radial-gradient(ellipse at 68% 42%, #f8f1dc 0, transparent 43%), var(--bg); }
+/* The app fills the screen exactly; only long lists scroll, inside their own screen. */
+.app-shell { position: fixed; inset: 0; width: 100%; height: 100svh; height: 100dvh; display: flex; flex-direction: column; overflow: hidden; background: radial-gradient(ellipse at 68% 42%, #f8f1dc 0, transparent 43%), var(--bg); }
 .topbar { height: 68px; flex: none; padding: 0 clamp(18px, 4vw, 54px); display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 5; background: #fffaf0e8; backdrop-filter: blur(14px); border-bottom: 1px solid #eae7d980; }
 .brand { text-decoration: none; color: #53665c; font-size: 17px; letter-spacing: -.6px; display: flex; align-items: center; gap: 10px; }
 .brand b { color: var(--green); font-weight: 900; }
@@ -28,7 +32,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, canvas:focus-visible
 .player-button span { font-size: 18px; }
 .player-button b { font-weight: 800; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .sound-toggle:hover, .parent-button:hover, .player-button:hover { transform: translateY(-2px); background: #f1f5e8; }
-.screen { flex: 1; position: relative; }
+.screen { flex: 1; min-height: 0; position: relative; overflow-x: hidden; overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }
+.game-screen, .finish-screen { overflow: hidden; }
 .eyebrow { color: #648271; text-transform: uppercase; font-size: 11px; letter-spacing: 2px; font-weight: 800; display: flex; align-items: center; gap: 9px; margin: 0; }
 .eyebrow.centered { justify-content: center; }
 .eyebrow-dot { width: 7px; height: 7px; border-radius: 50%; background: #e89b73; box-shadow: 0 0 0 4px #f9e9d9; }
@@ -43,7 +48,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, canvas:focus-visible
 .photo-circle { background: var(--photo) center / cover no-repeat, #e8eee3; border-radius: 50%; }
 
 /* Home ------------------------------------------------------------------------- */
-.welcome-screen { min-height: calc(100svh - 68px); display: grid; grid-template-columns: 1fr 1fr; align-items: center; padding: 0 clamp(24px, 6vw, 110px) 74px; gap: 3vw; }
+.welcome-screen { display: grid; grid-template-columns: 1fr 1fr; align-items: center; padding: 0 clamp(24px, 6vw, 110px) 74px; gap: 3vw; }
 .welcome-copy { position: relative; z-index: 2; padding: 14px 0 24px; }
 .welcome-copy h1, .finish-screen h1, .worlds-head h1 { font-family: var(--font); letter-spacing: -2.4px; color: #293d36; font-weight: 900; line-height: 1.05; }
 .welcome-copy h1 { font-size: clamp(42px, 4.8vw, 70px); margin: 18px 0 14px; }
@@ -89,7 +94,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, canvas:focus-visible
 .footer-leaves { color: #b8c8a9; letter-spacing: 3px; }
 
 /* Worlds ----------------------------------------------------------------------- */
-.worlds-screen { min-height: calc(100svh - 68px); padding: clamp(16px, 3vw, 34px) clamp(18px, 5vw, 80px) 30px; }
+.worlds-screen { padding: clamp(16px, 3vw, 34px) clamp(18px, 5vw, 80px) 30px; }
 .worlds-head { display: flex; align-items: center; gap: 22px; margin-bottom: clamp(14px, 2.4vw, 26px); }
 .worlds-head h1 { font-size: clamp(30px, 3.6vw, 48px); margin: 6px 0 0; letter-spacing: -1.6px; }
 .world-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(12px, 1.6vw, 20px); }
@@ -114,7 +119,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, canvas:focus-visible
 .album-button span { font-size: 20px; }
 .album-button b { font-size: 14px; }
 .album-button small { font-size: 12px; font-weight: 800; color: #a58641; background: #fff; border-radius: 99px; padding: 3px 9px; }
-.album-screen { min-height: calc(100svh - 68px); padding: clamp(16px, 3vw, 34px) clamp(18px, 5vw, 80px) 40px; }
+.album-screen { padding: clamp(16px, 3vw, 34px) clamp(18px, 5vw, 80px) 40px; }
 .album-worlds { display: grid; gap: 26px; }
 .album-world h2 { margin: 0 0 12px; font-size: 20px; letter-spacing: -.5px; color: #2f4a3e; display: flex; align-items: baseline; gap: 10px; }
 .album-world h2:before { content: ''; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); align-self: center; }
@@ -128,8 +133,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, canvas:focus-visible
 .sticker.unknown b { color: #b9b29f; }
 
 /* Game ------------------------------------------------------------------------- */
-.game-screen { min-height: calc(100svh - 68px); background: #e3e8cb; }
-.playfield { position: relative; isolation: isolate; width: 100%; height: calc(100svh - 68px); min-height: 310px; overflow: hidden; background: #e3e8cb; }
+.game-screen { background: #e3e8cb; }
+.playfield { position: relative; isolation: isolate; width: 100%; height: 100%; min-height: 0; overflow: hidden; background: #e3e8cb; touch-action: none; }
 /* Softly blurred landscape: the photos in the bubbles stay the sharpest thing on screen. */
 .playfield:before { content: ''; position: absolute; inset: -24px; z-index: -3; background: var(--world-bg, none) center / cover; filter: blur(5px) saturate(1.08); }
 .playfield:after { content: ''; position: absolute; inset: 0; z-index: -2; background: linear-gradient(90deg, #fffaf0a6 0, #fffaf026 42%, #fffaf014 100%); pointer-events: none; }
@@ -174,7 +179,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, canvas:focus-visible
 .memory-card.matched .memory-front { border-color: #cfe9c9; box-shadow: 0 0 0 4px #9fd29a88, 0 10px 25px #334b332b; }
 
 /* Finish ----------------------------------------------------------------------- */
-.finish-screen { min-height: calc(100svh - 68px); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 22px 20px 40px; overflow: hidden; background: radial-gradient(circle at 50% 30%, #fffbe8, #fbf3df 70%); }
+.finish-screen { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 22px 20px 40px; overflow: hidden; background: radial-gradient(circle at 50% 30%, #fffbe8, #fbf3df 70%); }
 .finish-medal { width: 90px; height: 90px; display: grid; place-items: center; border-radius: 50%; position: relative; background: radial-gradient(circle at 30% 25%, #fff8d7, #edbd54 72%); color: #fff9dc; font-size: 50px; filter: drop-shadow(0 12px 10px #d6ad4b38); animation: float 3s ease-in-out infinite; }
 .finish-medal i { position: absolute; font-style: normal; color: #fff; font-size: 20px; right: 8px; top: 2px; }
 .finish-screen .eyebrow { margin-top: 16px; }
@@ -243,7 +248,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, canvas:focus-visible
   .brand-mark { width: 28px; height: 28px; }
   .sound-toggle, .parent-button, .player-button { height: 38px; }
   .sound-toggle, .parent-button { width: 38px; }
-  .welcome-screen { min-height: calc(100svh - 60px); grid-template-columns: 1fr; padding: 8px 18px 70px; align-content: start; gap: 0; }
+  .welcome-screen { grid-template-columns: 1fr; padding: 8px 18px 70px; align-content: start; gap: 0; }
   .welcome-copy { grid-row: 2; padding: 12px 2px 0; }
   .welcome-copy h1 { font-size: clamp(36px, 9vw, 52px); margin: 12px 0 8px; }
   .intro { font-size: 14px; line-height: 1.55; margin-bottom: 16px; }
@@ -255,15 +260,12 @@ button:focus-visible, a:focus-visible, input:focus-visible, canvas:focus-visible
   .worlds-head { gap: 12px; }
   .world-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .world-card { min-height: 130px; border-radius: 20px; padding: 12px 14px; }
-  .game-screen, .finish-screen, .worlds-screen, .album-screen { min-height: calc(100svh - 60px); }
-  .playfield { height: calc(100svh - 60px); min-height: 260px; }
   .game-topline { top: 10px; left: 12px; right: 12px; }
   .back-button { font-size: 11px; padding: 8px 10px; }
       }
 /* Landscape phones: everything gets more compact so the bubbles keep room. */
 @media (max-height: 520px) and (orientation: landscape) {
   .topbar { height: 52px; }
-  .playfield, .game-screen { height: calc(100svh - 52px); min-height: 0; }
   .prompt-area { top: 58px; width: min(30vw, 260px); padding: 12px 14px; border-radius: 20px; }
   .prompt-area h1 { font-size: clamp(20px, 3.4vw, 28px); margin: 5px 0 6px; }
   .prompt-hint { font-size: 12px; margin-bottom: 8px; }

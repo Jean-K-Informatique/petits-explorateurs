@@ -6,8 +6,18 @@
     names = lines.names || {}; named = Object.keys(lines.named || {});
   }).catch(() => {});
   let playerSlug = null;
-  const players = new Map();
-  let active = null;
+  // One shared player for every clip. iPadOS/iOS only let a page start a sound right after a tap;
+  // a player unlocked once by a tap may then play the following clips on its own (auto-advance).
+  const player = new Audio();
+  player.preload = 'auto'; player.setAttribute('playsinline', '');
+  const SILENCE = 'data:audio/wav;base64,UklGRnQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YVAAAACAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgA==';
+  let unlocked = false;
+  function unlock() {
+    if (unlocked) return;
+    unlocked = true;
+    if (!player.src) { player.src = SILENCE; player.play().catch(() => { unlocked = false; }); }
+  }
+  for (const type of ['pointerdown', 'touchend', 'keydown']) document.addEventListener(type, unlock, { capture: true, passive: true });
   let activeResolve = null;
   let sequenceId = 0;
   function slug(name) {
@@ -18,31 +28,24 @@
   function isNamed(key) { return Boolean(playerSlug && names[playerSlug] && named.includes(key)); }
   function source(key) { return isNamed(key) ? `./assets/voice/names/${playerSlug}/${key}.m4a` : `./assets/voice/${key}.m4a`; }
   function interrupt() {
-    if (active && !active.paused) { active.pause(); active.currentTime = 0; }
+    if (!player.paused) player.pause();
     activeResolve?.(false); activeResolve = null;
   }
   function playOne(key) {
-    const src = source(key);
-    if (!players.has(src)) {
-      const audio = new Audio(src);
-      audio.preload = 'auto'; audio.playsInline = true;
-      players.set(src, audio);
-    }
     interrupt();
-    active = players.get(src); active.currentTime = 0;
-    const player = active;
+    player.src = source(key);
     return new Promise((resolve) => {
       activeResolve = resolve;
       const done = (ok) => {
         player.removeEventListener('ended', onEnded); player.removeEventListener('error', onError);
-        if (active === player && activeResolve === resolve) activeResolve = null;
+        if (activeResolve === resolve) activeResolve = null;
         resolve(ok);
       };
       const onEnded = () => done(true);
       const onError = () => done(false);
       player.addEventListener('ended', onEnded);
       player.addEventListener('error', onError);
-      player.play().catch(() => done(false));
+      player.play().then(() => { unlocked = true; }).catch(() => done(false));
     });
   }
   // Plays the clips one after the other; a new play or stop cancels the rest of the sequence.
@@ -57,12 +60,8 @@
     }
     return true;
   }
-  function preload(keys) {
-    for (const key of keys) {
-      const src = source(key);
-      if (!players.has(src)) { const audio = new Audio(); audio.preload = 'auto'; audio.playsInline = true; audio.src = src; players.set(src, audio); }
-    }
-  }
-  function stop() { sequenceId += 1; interrupt(); active = null; }
+  // Warms the browser cache so the next clips start without delay.
+  function preload(keys) { for (const key of keys) fetch(source(key)).catch(() => {}); }
+  function stop() { sequenceId += 1; interrupt(); }
   window.VoiceBank = { play, stop, preload, ready, hasName, setPlayer, isNamed };
 })();
