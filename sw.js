@@ -1,4 +1,4 @@
-const CACHE_NAME = 'petits-explorateurs-v24';
+const CACHE_NAME = 'petits-explorateurs-v25';
 const APP_FILES = [
   './', './index.html', './styles.css?v=13', './voice.js?v=10', './game-engine.js?v=12', './puzzle-game.js?v=7', './game.js?v=14', './manifest.webmanifest',
   './assets/icon.svg', './assets/icon-192.png', './assets/icon-512.png', './assets/apple-touch-icon.png',
@@ -22,8 +22,31 @@ async function contentFiles() {
   return [...files, ...voice.filter(Boolean).map((key) => `./assets/voice/${key}.m4a`)];
 }
 
+// Downloads a few files at a time and retries, since hosts like GitHub Pages answer a burst of
+// hundreds of requests with occasional 503s. Returns the files that still failed.
+async function store(cache, urls) {
+  const queue = [...urls]; const failed = [];
+  const worker = async () => {
+    for (let url = queue.shift(); url; url = queue.shift()) {
+      let ok = false;
+      for (let attempt = 0; attempt < 4 && !ok; attempt += 1) {
+        if (attempt) await new Promise((resolve) => setTimeout(resolve, 600 * attempt));
+        try { const response = await fetch(new Request(url, { cache: 'reload' })); if (response.ok) { await cache.put(url, response); ok = true; } } catch { /* retried below */ }
+      }
+      if (!ok) failed.push(url);
+    }
+  };
+  await Promise.all(Array.from({ length: 6 }, worker));
+  return failed;
+}
+
 self.addEventListener('install', (event) => {
-  event.waitUntil(contentFiles().then((files) => caches.open(CACHE_NAME).then((cache) => cache.addAll([...APP_FILES, ...files].map((url) => new Request(url, { cache: 'reload' }))))));
+  event.waitUntil((async () => {
+    const cache = await caches.open(CACHE_NAME);
+    // The app itself must be complete; a missing photo or clip is fetched later, when first used.
+    if ((await store(cache, APP_FILES)).length) throw new Error('App files unavailable');
+    await store(cache, await contentFiles());
+  })());
   self.skipWaiting();
 });
 

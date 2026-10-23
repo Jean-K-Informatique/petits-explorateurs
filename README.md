@@ -21,6 +21,12 @@ Depuis ce dossier, exécuter `python3 -m http.server 4173`, puis ouvrir <http://
 
 Les parties se jouent à l’horizontale. Sur mobile, tourner l’appareil en paysage.
 
+## En ligne et sur iPad
+
+Le jeu est publié avec GitHub Pages : <https://jean-k-informatique.github.io/petits-explorateurs/>. Sur iPad, l’ouvrir dans Safari, puis **Partager → Sur l’écran d’accueil** : il s’installe comme une appli, en plein écran, et fonctionne hors ligne après une première ouverture avec Internet (le temps de télécharger photos et voix, une vingtaine de mégaoctets).
+
+Pour publier une mise à jour : incrémenter `CACHE_NAME` dans `sw.js` (et le `?v=` des fichiers modifiés dans `index.html` et `sw.js`), puis `git commit` et `git push`. GitHub Pages republie en une à deux minutes ; l’iPad prend la nouvelle version à l’ouverture suivante avec Internet. Les originaux des voix (`voice-masters/`), les archives et les pages d’écoute ne sont pas publiés (voir `.gitignore`).
+
 ## Contenu
 
 - `content/animals.json` : les mondes et leurs animaux. Pour chaque animal : nom affiché, formes avec article (`the` : « le zèbre », `a` : « un zèbre »), deux indices visuels et une anecdote. Les modèles de phrases communs (« Où est {the} ? »…) sont dans `lines`.
