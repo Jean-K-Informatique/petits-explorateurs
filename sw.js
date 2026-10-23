@@ -1,4 +1,4 @@
-const CACHE_NAME = 'petits-explorateurs-v28';
+const CACHE_NAME = 'petits-explorateurs-v29';
 const APP_FILES = [
   './', './index.html', './styles.css?v=16', './voice.js?v=11', './game-engine.js?v=12', './puzzle-game.js?v=11', './my-images.js?v=1', './game.js?v=16', './manifest.webmanifest',
   './assets/icon.svg', './assets/icon-192.png', './assets/icon-512.png', './assets/apple-touch-icon.png',
