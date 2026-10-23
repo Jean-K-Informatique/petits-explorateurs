@@ -1,0 +1,102 @@
+{
+  "welcome": "Bonjour, petit explorateur ! Moi, c’est Lila. On va jouer ensemble et découvrir plein de choses !",
+  "colors": {
+    "color-red": "Touche la bulle rouge.",
+    "color-blue": "Touche la bulle bleue.",
+    "color-yellow": "Touche la bulle jaune.",
+    "color-green": "Touche la bulle verte.",
+    "color-purple": "Touche la bulle violette.",
+    "color-orange": "Touche la bulle orange.",
+    "color-pink": "Touche la bulle rose.",
+    "color-turquoise": "Touche la bulle turquoise.",
+    "color-brown": "Touche la bulle marron.",
+    "color-white": "Touche la bulle blanche."
+  },
+  "colorNames": {
+    "color-name-red": "Ça, c’est la bulle rouge.",
+    "color-name-blue": "Ça, c’est la bulle bleue.",
+    "color-name-yellow": "Ça, c’est la bulle jaune.",
+    "color-name-green": "Ça, c’est la bulle verte.",
+    "color-name-purple": "Ça, c’est la bulle violette.",
+    "color-name-orange": "Ça, c’est la bulle orange.",
+    "color-name-pink": "Ça, c’est la bulle rose.",
+    "color-name-turquoise": "Ça, c’est la bulle turquoise.",
+    "color-name-brown": "Ça, c’est la bulle marron.",
+    "color-name-white": "Ça, c’est la bulle blanche."
+  },
+  "colorYes": {
+    "color-yes-red": "Oui ! C’est bien la bulle rouge.",
+    "color-yes-blue": "Oui ! C’est bien la bulle bleue.",
+    "color-yes-yellow": "Oui ! C’est bien la bulle jaune.",
+    "color-yes-green": "Oui ! C’est bien la bulle verte.",
+    "color-yes-purple": "Oui ! C’est bien la bulle violette.",
+    "color-yes-orange": "Oui ! C’est bien la bulle orange.",
+    "color-yes-pink": "Oui ! C’est bien la bulle rose.",
+    "color-yes-turquoise": "Oui ! C’est bien la bulle turquoise.",
+    "color-yes-brown": "Oui ! C’est bien la bulle marron.",
+    "color-yes-white": "Oui ! C’est bien la bulle blanche."
+  },
+  "numbers": {
+    "number-1": "Touche le chiffre un.",
+    "number-2": "Touche le chiffre deux.",
+    "number-3": "Touche le chiffre trois.",
+    "number-4": "Touche le chiffre quatre.",
+    "number-5": "Touche le chiffre cinq.",
+    "number-6": "Touche le chiffre six.",
+    "number-7": "Touche le chiffre sept.",
+    "number-8": "Touche le chiffre huit.",
+    "number-9": "Touche le chiffre neuf.",
+    "number-10": "Touche le chiffre dix."
+  },
+  "numberNames": {
+    "number-name-1": "Ça, c’est le chiffre un.",
+    "number-name-2": "Ça, c’est le chiffre deux.",
+    "number-name-3": "Ça, c’est le chiffre trois.",
+    "number-name-4": "Ça, c’est le chiffre quatre.",
+    "number-name-5": "Ça, c’est le chiffre cinq.",
+    "number-name-6": "Ça, c’est le chiffre six.",
+    "number-name-7": "Ça, c’est le chiffre sept.",
+    "number-name-8": "Ça, c’est le chiffre huit.",
+    "number-name-9": "Ça, c’est le chiffre neuf.",
+    "number-name-10": "Ça, c’est le chiffre dix."
+  },
+  "numberYes": {
+    "number-yes-1": "Oui ! C’est bien le chiffre un.",
+    "number-yes-2": "Oui ! C’est bien le chiffre deux.",
+    "number-yes-3": "Oui ! C’est bien le chiffre trois.",
+    "number-yes-4": "Oui ! C’est bien le chiffre quatre.",
+    "number-yes-5": "Oui ! C’est bien le chiffre cinq.",
+    "number-yes-6": "Oui ! C’est bien le chiffre six.",
+    "number-yes-7": "Oui ! C’est bien le chiffre sept.",
+    "number-yes-8": "Oui ! C’est bien le chiffre huit.",
+    "number-yes-9": "Oui ! C’est bien le chiffre neuf.",
+    "number-yes-10": "Oui ! C’est bien le chiffre dix."
+  },
+  "praise": {
+    "praise-1": "Super !",
+    "praise-2": "Oui, c’est ça !",
+    "praise-3": "Bravo, tu as trouvé !",
+    "praise-4": "Bien joué !",
+    "praise-5": "Génial, explorateur !"
+  },
+  "extras": {
+    "memory-start": "Retourne deux cartes. On cherche les animaux pareils.",
+    "puzzle-hint": "Regarde le modèle. Le halo doré te montre où placer la pièce.",
+    "finish": "Bravo, explorateur ! Tu as réussi toute l’aventure !",
+    "help-1": "Regarde bien la bulle qui brille.",
+    "help-2": "Je t’aide : c’est la bulle qui brille !",
+    "puzzle-miss-1": "Pas tout à fait. Regarde bien la forme de la pièce.",
+    "puzzle-miss-2": "Essaie un autre endroit, en regardant le modèle.",
+    "memory-miss-1": "Pas pareil ! Essaie de te souvenir où ils sont.",
+    "memory-miss-2": "Ce ne sont pas les mêmes. Regarde bien, et réessaie."
+  },
+  "names": {
+    "martin": "Martin"
+  },
+  "named": {
+    "welcome": "Bonjour {name} ! Moi, c’est Lila. On va jouer ensemble et découvrir plein de choses !",
+    "finish": "Bravo {name} ! Tu as réussi toute l’aventure !",
+    "praise-1": "Super, {name} !",
+    "praise-5": "Génial, {name} !"
+  }
+}

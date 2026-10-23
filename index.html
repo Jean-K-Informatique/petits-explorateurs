@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#fffaf0" />
+    <meta name="description" content="Un jeu doux pour découvrir les animaux du monde en touchant, en écoutant et en explorant." />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Petits Explorateurs" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./assets/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png" />
+    <link rel="stylesheet" href="./styles.css?v=13" />
+    <title>Petits Explorateurs</title>
+  </head>
+  <body>
+    <main class="app-shell" id="app">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Petits Explorateurs, accueil" id="home-link">
+          <span class="brand-mark" aria-hidden="true">✦</span>
+          <span>petits <b>explorateurs</b></span>
+        </a>
+        <div class="top-actions">
+          <button class="player-button" id="player-button" aria-label="Choisir qui joue" title="Choisir qui joue"><span aria-hidden="true">🙂</span><b id="player-name">Qui joue ?</b></button>
+          <button class="sound-toggle" id="sound-toggle" aria-label="Activer les sons" title="Activer ou couper les sons">🔊</button>
+          <button class="parent-button" id="parent-button" aria-label="Réglages parents" title="Réglages parents"><span aria-hidden="true">☼</span></button>
+        </div>
+      </header>
+
+      <section class="screen welcome-screen" id="welcome-screen" aria-labelledby="welcome-title">
+        <div class="welcome-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> On apprend en jouant</div>
+          <h1 id="welcome-title">Prêt à partir<br />à l’aventure&nbsp;?</h1>
+          <p class="intro">72 animaux à découvrir dans six mondes.<br class="desktop-break" /> Touche, écoute et explore à ton rythme.</p>
+          <p class="picker-label">À quoi veux-tu jouer&nbsp;?</p>
+          <div class="game-cards" aria-label="Choisir un jeu">
+            <button class="game-card" data-activity="bubbles">
+              <span class="game-card-art art-bubbles" aria-hidden="true"><i style="--photo:url('./assets/animals/zebre.webp')"></i><i style="--photo:url('./assets/animals/lion.webp')"></i><i style="--photo:url('./assets/animals/girafe.webp')"></i></span>
+              <b>Les bulles</b><small>Trouve le bon animal</small>
+            </button>
+            <button class="game-card" data-activity="puzzle">
+              <span class="game-card-art art-puzzle" aria-hidden="true" style="--photo:url('./assets/animals/renard.webp')"><i></i><i></i><i></i><i></i></span>
+              <b>Le puzzle</b><small>Assemble la photo</small>
+            </button>
+            <button class="game-card" data-activity="memory">
+              <span class="game-card-art art-memory" aria-hidden="true"><i></i><i style="--photo:url('./assets/animals/manchot.webp')"></i></span>
+              <b>Les paires</b><small>Retrouve les jumeaux</small>
+            </button>
+          </div>
+          <button class="album-button" id="album-button"><span aria-hidden="true">📒</span><b>Mon album</b><small id="album-count">0 / 72</small></button>
+        </div>
+        <div class="welcome-art" aria-hidden="true">
+          <img class="welcome-landscape" src="./assets/themes/savane.webp" alt="" />
+          <span class="scene-wash"></span>
+          <span class="hero-bubble hero-one" style="--photo:url('./assets/animals/lion.webp')"></span>
+          <span class="hero-bubble hero-two" style="--photo:url('./assets/animals/dauphin.webp')"></span>
+          <span class="hero-bubble hero-three" style="--photo:url('./assets/animals/renard-polaire.webp')"></span>
+          <span class="hero-bubble hero-four" style="--photo:url('./assets/animals/ara.webp')"></span>
+          <div class="float-tag tag-one">Coucou&nbsp;!</div>
+        </div>
+        <div class="welcome-footer"><span>Une aventure toute douce</span><span class="footer-leaves">✿ &nbsp; ✳ &nbsp; ✿</span></div>
+      </section>
+
+      <section class="screen worlds-screen hidden" id="worlds-screen" aria-labelledby="worlds-title">
+        <div class="worlds-head">
+          <button class="back-button" id="worlds-back" aria-label="Retour à l’accueil">← <span>Accueil</span></button>
+          <div>
+            <p class="eyebrow"><span class="eyebrow-dot"></span> <span id="worlds-game">Les bulles</span></p>
+            <h1 id="worlds-title">Où partons-nous&nbsp;?</h1>
+          </div>
+        </div>
+        <div class="world-grid" id="world-grid" aria-label="Choisir un monde"></div>
+        <div class="extra-modes" id="extra-modes">
+          <p>Et aussi, dans les bulles&nbsp;:</p>
+          <button class="extra-card" data-world="colors"><span aria-hidden="true">🎨</span><b>Les couleurs</b></button>
+          <button class="extra-card" data-world="numbers"><span aria-hidden="true">🔢</span><b>Les chiffres</b></button>
+        </div>
+      </section>
+
+      <section class="screen album-screen hidden" id="album-screen" aria-labelledby="album-title">
+        <div class="worlds-head">
+          <button class="back-button" id="album-back" aria-label="Retour à l’accueil">← <span>Accueil</span></button>
+          <div>
+            <p class="eyebrow"><span class="eyebrow-dot"></span> <span id="album-owner">Mon album</span></p>
+            <h1 id="album-title">Mes animaux</h1>
+          </div>
+        </div>
+        <div class="album-worlds" id="album-worlds"></div>
+      </section>
+
+      <section class="screen game-screen hidden" id="game-screen" aria-labelledby="prompt-title">
+        <div class="playfield" id="playfield">
+          <canvas class="game-canvas" id="game-canvas" tabindex="0" role="application" aria-label="Jeu des bulles" aria-describedby="prompt-hint"></canvas>
+          <canvas class="game-canvas hidden" id="puzzle-canvas" tabindex="0" role="application" aria-label="Puzzle" aria-describedby="prompt-hint"></canvas>
+          <div class="game-topline">
+            <button class="back-button" id="back-button" aria-label="Retour aux mondes">← <span>Mondes</span></button>
+          </div>
+          <div class="prompt-area" id="prompt-area">
+            <div class="prompt-kicker" id="prompt-kicker">La savane</div>
+            <h1 id="prompt-title">Où est le lion&nbsp;?</h1>
+            <p class="prompt-hint" id="prompt-hint" aria-live="polite"></p>
+            <div class="prompt-actions">
+              <button class="listen-button" id="listen-button"><span class="listen-icon" aria-hidden="true">♫</span><span>Réécouter</span></button>
+              <button class="hint-button hidden" id="puzzle-hint"><span aria-hidden="true">✦</span> Montre-moi</button>
+            </div>
+          </div>
+          <div class="memory-board hidden" id="memory-board" role="group" aria-label="Cartes d’animaux à retrouver"></div>
+          <div class="reveal hidden" id="reveal" role="dialog" aria-modal="false" aria-labelledby="reveal-name">
+            <div class="reveal-card">
+              <button class="reveal-photo" id="reveal-photo" aria-label="Réécouter"><img id="reveal-img" alt="" /></button>
+              <div class="reveal-text">
+                <p class="reveal-kicker" id="reveal-kicker">Nouvelle découverte</p>
+                <h2 id="reveal-name">Lion</h2>
+                <p class="reveal-fact" id="reveal-fact"></p>
+                <div class="reveal-actions">
+                  <button class="listen-button" id="reveal-listen"><span class="listen-icon" aria-hidden="true">♫</span><span>Réécouter</span></button>
+                  <button class="primary-button" id="reveal-next"><span>Continuer</span><span class="button-arrow" aria-hidden="true">→</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="orientation-hint"><span class="rotate-glyph" aria-hidden="true">▱<span>↻</span></span><b>Tourne ton écran</b><small>Cette aventure se joue à l’horizontale</small><button class="quiet-button" id="portrait-back">Retour à l’accueil</button></div>
+          <div class="visually-hidden" id="choices" role="group" aria-label="Réponses disponibles"></div>
+        </div>
+      </section>
+
+      <section class="screen finish-screen hidden" id="finish-screen" aria-labelledby="finish-title">
+        <div class="finish-medal" aria-hidden="true"><span>★</span><i>✦</i></div>
+        <p class="eyebrow centered" id="finish-kicker">Quelle belle aventure&nbsp;!</p>
+        <h1 id="finish-title">Bravo, explorateur&nbsp;!</h1>
+        <p class="finish-copy" id="finish-copy">Tu as fait de belles découvertes.</p>
+        <div class="finish-gallery" id="finish-gallery"></div>
+        <div class="finish-actions">
+          <button class="primary-button" id="finish-next"><span id="finish-next-label">En route</span> <span class="button-arrow" aria-hidden="true">→</span></button>
+          <button class="quiet-button" id="finish-worlds">Changer de monde</button>
+          <button class="quiet-button" id="finish-home">Accueil</button>
+        </div>
+      </section>
+
+      <div class="parent-modal hidden" id="parent-modal" role="dialog" aria-modal="true" aria-labelledby="parent-title">
+        <div class="parent-card">
+          <button class="modal-close" id="close-parent" aria-label="Fermer">×</button>
+          <div class="modal-icon" aria-hidden="true">☼</div>
+          <p class="eyebrow centered">Pour les grands</p>
+          <h2 id="parent-title">Réglages du jeu</h2>
+          <label class="setting-row"><span><b>La voix de Lila</b><small>Une voix française, douce et claire</small></span><input type="checkbox" id="voice-setting" checked /><i class="switch"></i></label>
+          <label class="setting-row"><span><b>Partie courte</b><small>3 découvertes au lieu de 5</small></span><input type="checkbox" id="short-setting" /><i class="switch"></i></label>
+          <button class="credits-button" id="credits-button">Crédits des photos</button>
+          <p class="privacy-note">Aucun compte, aucune publicité. La progression reste sur cet appareil.</p>
+        </div>
+      </div>
+      <div class="parent-modal hidden" id="credits-modal" role="dialog" aria-modal="true" aria-labelledby="credits-title">
+        <div class="parent-card credits-card">
+          <button class="modal-close" id="close-credits" aria-label="Fermer">×</button>
+          <h2 id="credits-title">Crédits des photos</h2>
+          <p class="privacy-note">Photographies issues de Wikimedia Commons, utilisées selon leur licence. Elles ont été recadrées pour le jeu.</p>
+          <ul class="credits-list" id="credits-list"></ul>
+        </div>
+      </div>
+      <div class="parent-modal hidden" id="player-modal" role="dialog" aria-modal="true" aria-labelledby="player-title">
+        <div class="parent-card">
+          <button class="modal-close" id="close-player" aria-label="Fermer">×</button>
+          <div class="modal-icon" aria-hidden="true">🙂</div>
+          <p class="eyebrow centered">Les explorateurs</p>
+          <h2 id="player-title">Qui joue&nbsp;?</h2>
+          <div class="player-list" id="player-list"></div>
+          <form class="player-form" id="player-form">
+            <input id="player-input" maxlength="20" placeholder="Prénom de l’enfant" autocomplete="off" aria-label="Prénom de l’enfant" />
+            <button class="player-add" type="submit">Ajouter</button>
+          </form>
+          <p class="privacy-note">Lila dit le prénom des enfants marqués 🔊. Pour les autres, il s’affiche à l’écran. Chaque enfant garde sa progression sur cet appareil.</p>
+        </div>
+      </div>
+      <div class="toast" id="toast" aria-live="assertive"></div>
+    </main>
+    <script src="./voice.js?v=10" defer></script>
+    <script src="./game-engine.js?v=12" defer></script>
+    <script src="./puzzle-game.js?v=7" defer></script>
+    <script src="./game.js?v=14" defer></script>
+  </body>
+</html>

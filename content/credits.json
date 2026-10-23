@@ -1,0 +1,626 @@
+[
+ {
+  "id": "lion",
+  "title": "File:002 The lion king Snyggve in the Serengeti National Park Photo by Giles Laurent.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:002_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg",
+  "author": "Giles Laurent",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "elephant",
+  "title": "File:African elephant (Loxodonta africana) 2.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:African_elephant_(Loxodonta_africana)_2.jpg",
+  "author": "Charles J. Sharp",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "girafe",
+  "title": "File:Jirafa (Giraffa camelopardalis), parque nacional del Lago Mburo, Uganda, 2024-02-01, DD 36.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Jirafa_(Giraffa_camelopardalis),_parque_nacional_del_Lago_Mburo,_Uganda,_2024-02-01,_DD_36.jpg",
+  "author": "Diego Delso",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "zebre",
+  "title": "File:Cebra común (Equus quagga), parque nacional de Tarangire, Tanzania, 2024-05-25, DD 89.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Cebra_com%C3%BAn_(Equus_quagga),_parque_nacional_de_Tarangire,_Tanzania,_2024-05-25,_DD_89.jpg",
+  "author": "Diego Delso",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "hippopotame",
+  "title": "File:Hippo mouth opening.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Hippo_mouth_opening.jpg",
+  "author": "Jon Connell",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+ },
+ {
+  "id": "rhinoceros",
+  "title": "File:Black Rhinoceros During Sunset 2019-07-23.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Black_Rhinoceros_During_Sunset_2019-07-23.jpg",
+  "author": "Axel Tschentscher",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "guepard",
+  "title": "File:Namibia Otjiwarongo Cheetah Conservation Fund Cheetah Sitting.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Namibia_Otjiwarongo_Cheetah_Conservation_Fund_Cheetah_Sitting.jpg",
+  "author": "Alexander Klink",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+ },
+ {
+  "id": "crocodile",
+  "title": "File:Nile crocodile (Crocodylus niloticus) Mlilwane.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Nile_crocodile_(Crocodylus_niloticus)_Mlilwane.jpg",
+  "author": "Charles J. Sharp",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "autruche",
+  "title": "File:Avestruz (Struthio camelus), parque nacional de Amboseli, Kenia, 2024-05-22, DD 62.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Avestruz_(Struthio_camelus),_parque_nacional_de_Amboseli,_Kenia,_2024-05-22,_DD_62.jpg",
+  "author": "Diego Delso",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "suricate",
+  "title": "File:Suricata suricatta qtl1.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Suricata_suricatta_qtl1.jpg",
+  "author": "Quartl",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ {
+  "id": "phacochere",
+  "title": "File:Common Warthog (Phacochoerus africanus) male (33070778025).jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Common_Warthog_(Phacochoerus_africanus)_male_(33070778025).jpg",
+  "author": "Bernard DUPONT from FRANCE",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+ },
+ {
+  "id": "babouin",
+  "title": "File:060 Olive baboon walking at Queen Elizabeth National Park Photo by Giles Laurent.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:060_Olive_baboon_walking_at_Queen_Elizabeth_National_Park_Photo_by_Giles_Laurent.jpg",
+  "author": "Giles Laurent",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "background-savane",
+  "title": "File:Acacia (Vachellia tortilis), parque nacional Serengueti, Tanzania, 2024-05-26, DD 26.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Acacia_(Vachellia_tortilis),_parque_nacional_Serengueti,_Tanzania,_2024-05-26,_DD_26.jpg",
+  "author": "Diego Delso",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "renard",
+  "title": "File:Portrait of a red fox in Rautas fjällurskog.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Portrait_of_a_red_fox_in_Rautas_fj%C3%A4llurskog.jpg",
+  "author": "ClaudiaTen",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "ours",
+  "title": "File:Ведмідь у лісі.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:%D0%92%D0%B5%D0%B4%D0%BC%D1%96%D0%B4%D1%8C_%D1%83_%D0%BB%D1%96%D1%81%D1%96.jpg",
+  "author": "Byrdyak",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+ },
+ {
+  "id": "cerf",
+  "title": "File:Dülmen, Wildpark -- 2013 -- 9955.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Wildpark_--_2013_--_9955.jpg",
+  "author": "Dietmar Rabich",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "ecureuil",
+  "title": "File:Red squirrel (21808).jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Red_squirrel_(21808).jpg",
+  "author": "Rhododendrites",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "herisson",
+  "title": "File:Erinaceus europaeus LC0119.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Erinaceus_europaeus_LC0119.jpg",
+  "author": "Jörg Hempel",
+  "license": "CC BY-SA 2.0 de",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en"
+ },
+ {
+  "id": "hibou",
+  "title": "File:Eurasian eagle-owl (44088).jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Eurasian_eagle-owl_(44088).jpg",
+  "author": "Rhododendrites",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "loup",
+  "title": "File:Front view of a resting Canis lupus ssp.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Front_view_of_a_resting_Canis_lupus_ssp.jpg",
+  "author": "Gary Kramer",
+  "license": "Public domain",
+  "licenseUrl": ""
+ },
+ {
+  "id": "sanglier",
+  "title": "File:Wildsau im wilderlebnispark daun.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Wildsau_im_wilderlebnispark_daun.jpg",
+  "author": "Superbass",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ {
+  "id": "blaireau",
+  "title": "File:Mäyrä Ähtäri 4.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:M%C3%A4yr%C3%A4_%C3%84ht%C3%A4ri_4.jpg",
+  "author": "kallerna",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ {
+  "id": "castor",
+  "title": "File:Castoridae Castor fiber 1.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Castoridae_Castor_fiber_1.jpg",
+  "author": "NasserHalaweh",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "lynx",
+  "title": "File:Lynx lurking in grass.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Lynx_lurking_in_grass.jpg",
+  "author": "Dawidovsky",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+ },
+ {
+  "id": "pic-vert",
+  "title": "File:Жовна зелена (Picus viridis).jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:%D0%96%D0%BE%D0%B2%D0%BD%D0%B0_%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D0%B0_(Picus_viridis).jpg",
+  "author": "Ryzhkov Sergey",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "background-foret",
+  "title": "File:Dülmen, Rorup, NSG Roruper Holz -- 2021 -- 8187-91.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Rorup,_NSG_Roruper_Holz_--_2021_--_8187-91.jpg",
+  "author": "Dietmar Rabich",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "vache",
+  "title": "File:HF in der Rhön auf der Weide.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:HF_in_der_Rh%C3%B6n_auf_der_Weide.jpg",
+  "author": "Verum",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ {
+  "id": "cochon",
+  "title": "File:Farm-wildlife-herd-pasture-livestock-mammal-732554-pxhere.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Farm-wildlife-herd-pasture-livestock-mammal-732554-pxhere.jpg",
+  "author": "Anonymous",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+ },
+ {
+  "id": "mouton",
+  "title": "File:Sheep of Boxford Newbury.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Sheep_of_Boxford_Newbury.jpg",
+  "author": "TudorTulok",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "chevre",
+  "title": "File:Schokland Netherlands Goat-in-Middlebuurt-02.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Schokland_Netherlands_Goat-in-Middlebuurt-02.jpg",
+  "author": "CEphoto, Uwe Aranas",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ {
+  "id": "cheval",
+  "title": "File:Domestic horse at Suryachaur and the mountains in the back1.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Domestic_horse_at_Suryachaur_and_the_mountains_in_the_back1.jpg",
+  "author": "Shadow Ayush",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "ane",
+  "title": "File:Donkey (Equus africanus asinus) at Devín Castle (Bratislava, Slovakia) julesvernex2.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Donkey_(Equus_africanus_asinus)_at_Dev%C3%ADn_Castle_(Bratislava,_Slovakia)_julesvernex2.jpg",
+  "author": "Jules Verne Times Two",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "poule",
+  "title": "File:Hen 0001.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Hen_0001.jpg",
+  "author": "Lilly M",
+  "license": "CC BY 2.5",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.5"
+ },
+ {
+  "id": "canard",
+  "title": "File:Male mallard duck 2.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Male_mallard_duck_2.jpg",
+  "author": "Acarpentier",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+ },
+ {
+  "id": "lapin",
+  "title": "File:Heimtier 004 2023 08 26.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Heimtier_004_2023_08_26.jpg",
+  "author": "Friedrich Haag",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "dindon",
+  "title": "File:Narragansett Turkey, male.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Narragansett_Turkey,_male.jpg",
+  "author": "TemulsLightningPoncho",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "chien",
+  "title": "File:Border Collie herding.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Border_Collie_herding.jpg",
+  "author": "Mom0-goodeboi",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "chat",
+  "title": "File:Chat tigré Josselin 01.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Chat_tigr%C3%A9_Josselin_01.jpg",
+  "author": "Tsaag Valren",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "background-ferme",
+  "title": "File:Tubla sot a Sëurasas Gherdëina.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Tubla_sot_a_S%C3%ABurasas_Gherd%C3%ABina.jpg",
+  "author": "Wolfgang Moroder",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ {
+  "id": "background-ocean",
+  "title": "File:Coral Outcrop Flynn Reef.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Coral_Outcrop_Flynn_Reef.jpg",
+  "author": "Toby Hudson",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ {
+  "id": "baleine",
+  "title": "File:Humpback whale (Megaptera novaeangliae) calf Moorea 2.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Humpback_whale_(Megaptera_novaeangliae)_calf_Moorea_2.jpg",
+  "author": "Charles J. Sharp",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "dauphin",
+  "title": "File:Tursiops truncatus 01.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Tursiops_truncatus_01.jpg",
+  "author": "NASA",
+  "license": "Public domain",
+  "licenseUrl": ""
+ },
+ {
+  "id": "orque",
+  "title": "File:Orcas in Alaska.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Orcas_in_Alaska.jpg",
+  "author": "Christopher Michel",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+ },
+ {
+  "id": "requin",
+  "title": "File:Tiburón azul (Prionace glauca), canal Fayal-Pico, islas Azores, Portugal, 2020-07-27, DD 28.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Tibur%C3%B3n_azul_(Prionace_glauca),_canal_Fayal-Pico,_islas_Azores,_Portugal,_2020-07-27,_DD_28.jpg",
+  "author": "Diego Delso",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "tortue-mer",
+  "title": "File:Chelonia mydas is going for the air edit.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Chelonia_mydas_is_going_for_the_air_edit.jpg",
+  "author": "Brocken Inaglory",
+  "license": "CC BY-SA 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ {
+  "id": "pieuvre",
+  "title": "File:Octopus cyanea Maldives.JPG",
+  "url": "https://commons.wikimedia.org/wiki/File:Octopus_cyanea_Maldives.JPG",
+  "author": "Ahmed Abdul Rahman",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "poisson-clown",
+  "title": "File:Common clownfish.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Common_clownfish.jpg",
+  "author": "Janderk",
+  "license": "Public domain",
+  "licenseUrl": ""
+ },
+ {
+  "id": "etoile-mer",
+  "title": "File:Fromia indica Landaagiraavaru.JPG",
+  "url": "https://commons.wikimedia.org/wiki/File:Fromia_indica_Landaagiraavaru.JPG",
+  "author": "Frédéric Ducarme",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "meduse",
+  "title": "File:Compass Jellyfish (Chrysaora hysoscella).jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Compass_Jellyfish_(Chrysaora_hysoscella).jpg",
+  "author": "Aminhadia72",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+ },
+ {
+  "id": "crabe",
+  "title": "File:Eriphia verrucosa male 2009 G5.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Eriphia_verrucosa_male_2009_G5.jpg",
+  "author": "George Chernilevsky",
+  "license": "Public domain",
+  "licenseUrl": ""
+ },
+ {
+  "id": "hippocampe",
+  "title": "File:Hippocampus hippocampus (on Ascophyllum nodosum).jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Hippocampus_hippocampus_(on_Ascophyllum_nodosum).jpg",
+  "author": "Hans Hillewaert",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "raie",
+  "title": "File:Manta Ray, Bali, Indonesia.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Manta_Ray,_Bali,_Indonesia.jpg",
+  "author": "7oanna",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "ours-polaire",
+  "title": "File:Polar bear watches USCGC Healy 230922-D-GO191-1039.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Polar_bear_watches_USCGC_Healy_230922-D-GO191-1039.jpg",
+  "author": "Carter Acton",
+  "license": "Public domain",
+  "licenseUrl": ""
+ },
+ {
+  "id": "manchot",
+  "title": "File:Emperor Penguin imported from iNaturalist photo 49216714 on 12 April 2026.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Emperor_Penguin_imported_from_iNaturalist_photo_49216714_on_12_April_2026.jpg",
+  "author": "Seig (via iNaturalist)",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+ },
+ {
+  "id": "phoque",
+  "title": "File:8I3A2387.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:8I3A2387.jpg",
+  "author": "TheFlyingPanda",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "morse",
+  "title": "File:Atlantic walrus (Odobenus rosmarus rosmarus) 2 NOAA Photo Library.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Atlantic_walrus_(Odobenus_rosmarus_rosmarus)_2_NOAA_Photo_Library.jpg",
+  "author": "Mike Dunn, NC State Museum of Natural Sciences",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+ },
+ {
+  "id": "renard-polaire",
+  "title": "File:Arctic fox sits in the ice and snow in the winter.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Arctic_fox_sits_in_the_ice_and_snow_in_the_winter.jpg",
+  "author": "Jonatan Pie r3dmax",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+ },
+ {
+  "id": "harfang",
+  "title": "File:Bubo scandiacus Delta 1.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Bubo_scandiacus_Delta_1.jpg",
+  "author": "David Syzdek",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+ },
+ {
+  "id": "renne",
+  "title": "File:Caribú (Rangifer tarandus), Parque nacional y reserva Denali, Alaska, Estados Unidos, 2017-08-30, DD 40.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Carib%C3%BA_(Rangifer_tarandus),_Parque_nacional_y_reserva_Denali,_Alaska,_Estados_Unidos,_2017-08-30,_DD_40.jpg",
+  "author": "Diego Delso",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "boeuf-musque",
+  "title": "File:Muskox Dalton Highway.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Muskox_Dalton_Highway.jpg",
+  "author": "Naturedata",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+ },
+ {
+  "id": "lievre-arctique",
+  "title": "File:Заяц-беляк.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:%D0%97%D0%B0%D1%8F%D1%86-%D0%B1%D0%B5%D0%BB%D1%8F%D0%BA.jpg",
+  "author": "NadezhdaKhaustova",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "macareux",
+  "title": "File:Puffin (Fratercula arctica).jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Puffin_(Fratercula_arctica).jpg",
+  "author": "Charles J. Sharp",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "beluga",
+  "title": "File:Delphinapterus leucas 27 (cropped).jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Delphinapterus_leucas_27_(cropped).jpg",
+  "author": "greyloch (Flickr)",
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+ },
+ {
+  "id": "loup-arctique",
+  "title": "File:Loup arctique DSCF2720.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Loup_arctique_DSCF2720.jpg",
+  "author": "Musicaline",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "background-glaces",
+  "title": "File:.00 2070 Paradise Harbor (Paradise Bay), Antarktis.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:.00_2070_Paradise_Harbor_(Paradise_Bay),_Antarktis.jpg",
+  "author": "W. Bulach",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "tigre",
+  "title": "File:Bengal tiger (Panthera tigris tigris) female 2.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Bengal_tiger_(Panthera_tigris_tigris)_female_2.jpg",
+  "author": "Charles J. Sharp",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "jaguar",
+  "title": "File:Jaguar (Panthera onca palustris) female Piquiri River 2.JPG",
+  "url": "https://commons.wikimedia.org/wiki/File:Jaguar_(Panthera_onca_palustris)_female_Piquiri_River_2.JPG",
+  "author": "Charles J. Sharp",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "gorille",
+  "title": "File:Mountain gorilla (Gorilla beringei beringei) female 2.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Mountain_gorilla_(Gorilla_beringei_beringei)_female_2.jpg",
+  "author": "Charles J. Sharp",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "orang-outan",
+  "title": "File:Bornean orangutan (Pongo pygmaeus), Tanjung Putting National Park 15.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Bornean_orangutan_(Pongo_pygmaeus),_Tanjung_Putting_National_Park_15.jpg",
+  "author": "Thomas Fuhrmann",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "ara",
+  "title": "File:Scarlet macaw (Ara macao macao) Yasuni.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Scarlet_macaw_(Ara_macao_macao)_Yasuni.jpg",
+  "author": "Charles J. Sharp",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "toucan",
+  "title": "File:110 Toco toucan in Encontro das Águas State Park Photo by Giles Laurent.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:110_Toco_toucan_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg",
+  "author": "Giles Laurent",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "paresseux",
+  "title": "File:Bradypus.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Bradypus.jpg",
+  "author": "Stefan Laube (Tauchgurke)",
+  "license": "Public domain",
+  "licenseUrl": ""
+ },
+ {
+  "id": "cameleon",
+  "title": "File:Panther chameleon (Furcifer pardalis) male Montagne d’Ambre 2.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Panther_chameleon_(Furcifer_pardalis)_male_Montagne_d%E2%80%99Ambre_2.jpg",
+  "author": "Charles J. Sharp",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "grenouille",
+  "title": "File:Red-eyed tree frog in Costa Rica 01.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Red-eyed_tree_frog_in_Costa_Rica_01.jpg",
+  "author": "Bernard Gagnon",
+  "license": "CC0",
+  "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+ },
+ {
+  "id": "lemurien",
+  "title": "File:Ring-tailed lemur (Lemur catta).jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Ring-tailed_lemur_(Lemur_catta).jpg",
+  "author": "Charles J. Sharp",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "tapir",
+  "title": "File:A Malayan tapir.jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:A_Malayan_tapir.jpg",
+  "author": "Andy Hay",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+ },
+ {
+  "id": "python",
+  "title": "File:Green Tree Python (Morelia viridis) (CWPG).jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Green_Tree_Python_(Morelia_viridis)_(CWPG).jpg",
+  "author": "Vauxford",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ {
+  "id": "background-jungle",
+  "title": "File:Kakum National Park, Jukwa (P1100172).jpg",
+  "url": "https://commons.wikimedia.org/wiki/File:Kakum_National_Park,_Jukwa_(P1100172).jpg",
+  "author": "Matti Blume",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+ }
+]

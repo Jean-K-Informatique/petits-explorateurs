@@ -1,0 +1,6 @@
+# Sources lourdes ou de travail : non nécessaires pour jouer
+voice-masters/
+archive/
+tools/voice-candidates/
+.claude/
+.DS_Store
